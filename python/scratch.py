@@ -5,7 +5,7 @@ import plotnine as plot
 
 #%%
 # Reading in the data
-fin_dat = pl.read_csv('c:/git/personal_fin_app/data/faker_fin_data.csv'
+fin_dat = pl.read_csv('c:/git/personal_fin_app/personal_finance_analysis_app/data/faker_fin_data.csv'
                       ,truncate_ragged_lines=True)
 
 # fin_dat.head(10)
@@ -51,6 +51,15 @@ transaction_type = {#{'What I'm looking to match on':'What I want in the column'
 #%% 
 # my recreation of the chatgpt function
 def map_dict_to_col(df, string_col, new_col, mapping_dict):
+    '''
+    This fn will take a dictionary where the Key is the searching criteria for the string_col (ideally a description column) and add a new column to the data frame you're working with. 
+    As an example, pass in a dictionary of {'company names to find':'full name of company to show in the column'}
+
+    df = dataframe that you're working with
+    string_col = the name of a description-like column you're looking for
+    new_col = the name of the new column to add
+    mapping_dict = the dictionary of the values to apply to you're working dataframe. 
+    '''
     #make an empty column with None
     df = df.with_columns(pl.lit(None).alias(new_col))
 
@@ -65,8 +74,17 @@ def map_dict_to_col(df, string_col, new_col, mapping_dict):
     return df
 #%%
 def filling_in_new_values(df = pl.DataFrame, desc_col_name = str, column_name = str, dict_to_update = dict):
+    '''
+    The idea behind this fn is that every month you'll be adding your bank statment.
+    There will most likely be newer transactions that need to be categoriezed. 
+    This fn will ask how you'd like to do so.
+
+    df = dataframe that you're working with
+    desc_col_name = the name of a description-like column you're looking for
+    column_name = the name of the column with possible null values
+    dict_to_update = the dictionary of the values to apply to you're working dataframe. 
+    '''
     df_null_values = df.select(column_name).null_count()[0,0]
-   
     while df_null_values != 0:
         print('Number of Null Values to fill: %s' % df_null_values)
         print('\n')
@@ -122,6 +140,7 @@ print(df)
 # filling in the other values that in the company column
 df = filling_in_new_values(df, "description", "company", company)
 df = filling_in_new_values(df, "description", "category", transaction_type)
+#%%
 print(df)
 print(company)
 print(transaction_type)
