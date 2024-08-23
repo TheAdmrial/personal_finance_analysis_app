@@ -8,8 +8,7 @@ import plotnine as plot
 fin_dat = pl.read_csv('c:/git/personal_fin_app/personal_finance_analysis_app/data/faker_fin_data.csv'
                       ,truncate_ragged_lines=True)
 
-# fin_dat.head(10)
-
+# TODO: make an is_income column
 #%%
 # Cleaning up the Date column: cutting off this part from the string -> .439Z
 
