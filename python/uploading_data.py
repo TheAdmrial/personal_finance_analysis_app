@@ -1,12 +1,17 @@
 import polars as pl
-
+import os
+import pprint
+from dotenv import load_dotenv, dotenv_values
 # the postgresql db info
-'''
-TODO: make a test db to upload the test data into
-TODO: make a .env file with the username and password for the database
-TODO: reference said .env file 
-'''
-uri = "postgresql://username:password@server:port/database"
+load_dotenv()
+test_user = os.environ.get("fin_app_test_db_user")
+test_db = os.environ.get("fin_app_test_db_name")
+test_pass = os.environ.get("fin_app_test_db_pass")
+test_server = os.environ.get("fin_app_test_server_name")
+test_port = os.environ.get("fin_app_test_port")
+# uri = "postgresql://username:password@server:port/database"
+uri = "postgresql://%s:%s@%s:%s/%s" % (test_user, test_pass,test_server,test_port, test_db)
+# print(uri)
 # the dataframe to load into the db
 '''
 step 1: query the transaction_type and company tables for all the values
@@ -17,11 +22,11 @@ step 5: add columns to the df that convert the company and transaction_type to a
 step 6: load the df into the main transaction table 
 '''
 
-df = pl.DataFrame({"foo": [1, 2, 3]})
+# df = pl.DataFrame({"foo": [1, 2, 3]})
 
 
 
 
 
 # actually writing to the db
-df.write_database(table_name="records", connection=uri, engine="adbc")
+# df.write_database(table_name="records", connection=uri, engine="adbc")
