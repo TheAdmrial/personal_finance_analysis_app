@@ -143,3 +143,6 @@ df = filling_in_new_values(df, "description", "category", transaction_type)
 print(df)
 print(company)
 print(transaction_type)
+#%%
+# write the data to a csv file in the data folder
+df.write_csv(file = 'C:/git/personal_fin_app/personal_finance_analysis_app/data/faker_fin_data_clean.csv')
