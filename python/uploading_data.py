@@ -57,13 +57,16 @@ transaction_type = {'Apollotech': 'Income'
 transaction_query = 'SELECT * FROM transaction_type'
 company_query = 'SELECT * FROM company'
 
+# step 2 
 transaction_results = pl.read_database_uri(query=transaction_query, uri=uri)
 company_results = pl.read_database_uri(query=company_query, uri=uri)
 
+#%%
+# step 3 compare the dictionary values with what exisits in the list from the db. Kick out any values that match from the dictionary. 
 
 
-
-
+#%%
+# step 4 add the dictionary values that still exist to either to the company table or the transaction_type table
 
 
 # actually writing to the db
