@@ -19,11 +19,39 @@ uri = "postgresql://%s:%s@%s:%s/%s" % (test_user, test_pass,test_server,test_por
 '''
 step 1: query the transaction_type and company tables for all the values
 step 2: make a list/dictionary with the existing values 
+    Step 2a: grab the list of values from the column
 step 3: compare the current table contents with the new data
 step 4: if there are values that aren't in dict (db tables) then add the new company or transaction_type
 step 5: add columns to the df that convert the company and transaction_type to a number. Drop the string company and transaction_type columns
 step 6: load the df into the main transaction table 
 '''
+#%%
+company = { 'Football Is Good':'Ftbl Co'
+           , 'Maple Gaming':'Maple Games'
+           , 'Andy shoes':"Andy's"
+           , 'Apple Natural':'Nat Apple'
+           , 'compression wear':'Boston'
+           , 'goalkeeper gloves':'Carbonite'
+           , 'layout consists':'The Auto'
+           , 'bonded black leather':'Ergo Chair'
+           , 'sport bikes':'Nagasaki Lander'
+           , 'B340':'Apollotech'
+           , '13 9370':'ABC Co'
+           , 'formal shirts':'New Fits'}
+transaction_type = {'Apollotech': 'Income'
+                    , 'New ABC': 'Income'
+                    , 'Maple Gaming': 'Groceries'
+                    , 'shoes are designed': 'Groceries'
+                    , 'beautiful range': 'Fun Money'
+                    , 'stomthieng': 'stupid'
+                    , 'Football Is Good': 'Utilities'
+                    , 'advanced compression': 'Utilities'
+                    , 'goalkeeper gloves': 'Groceries'
+                    , 'layout consists': 'Car Payment'
+                    , 'automobile layout': 'Car Payment'
+                    , 'bonded black leather': 'Rent'
+                    , 'name of several': 'Groceries'
+                    , 'fits and styling': 'Clothes'}
 #%%
 # step 1 query the transaction_type and company tables
 transaction_query = 'SELECT * FROM transaction_type'
@@ -32,8 +60,7 @@ company_query = 'SELECT * FROM company'
 transaction_results = pl.read_database_uri(query=transaction_query, uri=uri)
 company_results = pl.read_database_uri(query=company_query, uri=uri)
 
-print(transaction_results)
-print(company_results)
+
 
 
 
