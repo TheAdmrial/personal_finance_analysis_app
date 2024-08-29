@@ -8,7 +8,7 @@ CREATE TABLE IF NOT EXISTS public.transactions
     id serial NOT NULL,
     date date NOT NULL,
     amount numeric(6,2) NOT NULL,
-    description character(500)[] NOT NULL,
+    description text[] NOT NULL,
     type_id integer,
     company_id integer,
     PRIMARY KEY (id)
@@ -17,14 +17,14 @@ CREATE TABLE IF NOT EXISTS public.transactions
 CREATE TABLE IF NOT EXISTS public.transaction_type
 (
     id serial NOT NULL,
-    type_name character(30)[] NOT NULL,
+    type_name text[] NOT NULL,
     PRIMARY KEY (id)
 );
 
 CREATE TABLE IF NOT EXISTS public.company
 (
     id serial NOT NULL,
-    company_name character(250)[],
+    company_name text[],
     PRIMARY KEY (id)
 );
 
