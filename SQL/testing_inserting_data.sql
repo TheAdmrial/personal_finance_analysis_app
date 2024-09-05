@@ -1,20 +1,12 @@
---INSERT INTO transaction_type (id) VALUES 
---(1)
+INSERT INTO transaction_type (id, type_name) VALUES 
+(DEFAULT, 'testing1')
+,(DEFAULT, 'testing 2')
+,(DEFAULT, 'testing3')
+,(DEFAULT, '4testing');
 
-/*
-I keep getting this error: 
-ERROR:  Array value must start with "{" or dimension information.malformed array literal: "testing" 
+SELECT * from transaction_type;
 
-ERROR:  malformed array literal: "testing"
-SQL state: 22P02
-Detail: Array value must start with "{" or dimension information.
-Character: 92
-
-Could this be becasue of the Text data type? Should I change back to VarChar? 
-*/
-
-UPDATE transaction_type
-SET type_name = 'testing'
-WHERE id = 1;
-
-SELECT * from transaction_type
+INSERT INTO company (id, company_name) VALUE
+(DEFAULT, '1testing')
+, (DEFAULT, '2 testing')
+, (DEFAULT, '3  testing')
