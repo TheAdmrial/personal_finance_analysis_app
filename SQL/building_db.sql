@@ -22,9 +22,9 @@ CREATE TABLE IF NOT EXISTS public.transactions
     id serial NOT NULL,
     date date NOT NULL,
     amount numeric(6, 2) NOT NULL,
-    description text[] COLLATE pg_catalog."default" NOT NULL,
     type_id integer,
     company_id integer,
+    description character(400) COLLATE pg_catalog."default",
     CONSTRAINT transactions_pkey PRIMARY KEY (id)
 );
 
