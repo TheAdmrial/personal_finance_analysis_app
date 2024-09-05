@@ -70,11 +70,24 @@ max_cat_id = (len(transaction_results.select(pl.col('type_name'))))
 categories = list(transaction_results[0:max_cat_id,1])
 
 #%%
+#function 1 Cleaning out the dictionary with existing values pt1
 # comparing dict values to the list values
-for key, value in transaction_type.values():
-    for i in categories:
-        if value == categories[i]:
-            transaction_type.pop(key)
+categories_new = transaction_type
+cats_to_pop = []
+# print(categories_new)
+#%%
+#function 1 Cleaning out the dictionary with existing values pt2
+for key, value in transaction_type.items():
+    for i in range(len(categories)):
+        if value in categories[i]:
+            cats_to_pop.append(key) 
+#%%
+#function 1 Cleaning out the dictionary with existing values pt3
+# return
+for k in cats_to_pop:
+    categories_new.pop(k)
+#%%
+print(transaction_type)
 #%%
 # step 4 add the dictionary values that still exist to either to the company table or the transaction_type table
 #************Make sure to write the insert statement like (DEFAULT, <company/category name>)************
