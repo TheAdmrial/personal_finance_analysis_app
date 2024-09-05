@@ -3,42 +3,42 @@
 BEGIN;
 
 
-CREATE TABLE IF NOT EXISTS public.transactions
+CREATE TABLE IF NOT EXISTS public.company
 (
     id serial NOT NULL,
-    date date NOT NULL,
-    amount numeric(6,2) NOT NULL,
-    description text[] NOT NULL,
-    type_id integer,
-    company_id integer,
-    PRIMARY KEY (id)
+    company_name character(250) COLLATE pg_catalog."default",
+    CONSTRAINT company_pkey PRIMARY KEY (id)
 );
 
 CREATE TABLE IF NOT EXISTS public.transaction_type
 (
     id serial NOT NULL,
-    type_name text[] NOT NULL,
-    PRIMARY KEY (id)
+    type_name character(100) COLLATE pg_catalog."default",
+    CONSTRAINT transaction_type_pkey PRIMARY KEY (id)
 );
 
-CREATE TABLE IF NOT EXISTS public.company
+CREATE TABLE IF NOT EXISTS public.transactions
 (
     id serial NOT NULL,
-    company_name text[],
-    PRIMARY KEY (id)
+    date date NOT NULL,
+    amount numeric(6, 2) NOT NULL,
+    description text[] COLLATE pg_catalog."default" NOT NULL,
+    type_id integer,
+    company_id integer,
+    CONSTRAINT transactions_pkey PRIMARY KEY (id)
 );
 
 ALTER TABLE IF EXISTS public.transactions
-    ADD FOREIGN KEY (type_id)
-    REFERENCES public.transaction_type (id) MATCH SIMPLE
+    ADD CONSTRAINT transactions_company_id_fkey FOREIGN KEY (company_id)
+    REFERENCES public.company (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
 
 
 ALTER TABLE IF EXISTS public.transactions
-    ADD FOREIGN KEY (company_id)
-    REFERENCES public.company (id) MATCH SIMPLE
+    ADD CONSTRAINT transactions_type_id_fkey FOREIGN KEY (type_id)
+    REFERENCES public.transaction_type (id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
