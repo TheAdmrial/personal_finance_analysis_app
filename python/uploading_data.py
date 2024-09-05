@@ -54,8 +54,8 @@ transaction_type = {'Apollotech': 'Income'
                     , 'fits and styling': 'Clothes'}
 #%%
 # step 1 query the transaction_type and company tables
-transaction_query = 'SELECT * FROM transaction_type'
-company_query = 'SELECT * FROM company'
+transaction_query = 'SELECT * FROM transaction_type ORDER BY id'
+company_query = 'SELECT * FROM company ORDER BY id'
 
 # step 2 
 transaction_results = pl.read_database_uri(query=transaction_query, uri=uri)
@@ -64,11 +64,23 @@ company_results = pl.read_database_uri(query=company_query, uri=uri)
 #%%
 # step 3 compare the dictionary values with what exisits in the list from the db. Kick out any values that match from the dictionary. 
 
+# getting the length of the results because the column will grow
+max_cat_id = (len(transaction_results.select(pl.col('type_name'))))
+# saving the list of existing categories
+categories = list(transaction_results[0:max_cat_id,1])
 
 #%%
+# comparing dict values to the list values
+for key, value in transaction_type.values():
+    for i in categories:
+        if value == categories[i]:
+            transaction_type.pop(key)
+#%%
 # step 4 add the dictionary values that still exist to either to the company table or the transaction_type table
-
+#************Make sure to write the insert statement like (DEFAULT, <company/category name>)************
 
 # actually writing to the db
 # df.write_database(table_name="records", connection=uri, engine="adbc")
+# %%
+transaction_results.select(pl.select(pl.col('type_name')))
 # %%
