@@ -49,7 +49,7 @@ transaction_type = {#{'What I'm looking to match on':'What I want in the column'
 #     return df
 #%% 
 # my recreation of the chatgpt function
-def map_dict_to_col(df, string_col, new_col, mapping_dict):
+def map_dict_to_col(df = pl.DataFrame, string_col = str, new_col = str, mapping_dict = dict):
     '''
     This fn will take a dictionary where the Key is the searching criteria for the string_col (ideally a description column) and add a new column to the data frame you're working with. 
     As an example, pass in a dictionary of {'company names to find':'full name of company to show in the column'}
