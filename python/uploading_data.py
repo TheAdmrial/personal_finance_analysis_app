@@ -2,6 +2,7 @@
 import polars as pl
 import os
 from dotenv import load_dotenv, dotenv_values
+import psycopg2
 #%%
 # the postgresql db info
 load_dotenv('C:/git/personal_fin_app/.env')
@@ -10,6 +11,20 @@ test_db = os.environ.get("fin_app_test_db_name")
 test_pass = os.environ.get("fin_app_test_db_pass")
 test_server = os.environ.get("fin_app_test_server_name")
 test_port = str(os.environ.get("fin_app_test_port"))
+#%%
+# making a function to connect to the postgresql DB
+def get_connection():
+    try:
+        return psycopg2.connect(
+            database = test_db
+            , user = test_user
+            , password = test_pass
+            , host = test_server
+            , port = test_port
+        )
+    except:
+        return False
+    
 #%%
 # uri = "postgresql://username:password@server:port/database"
 uri = "postgresql://%s:%s@%s:%s/%s" % (test_user, test_pass,test_server,test_port, test_db)
@@ -83,11 +98,33 @@ for key, value in transaction_type.items():
             cats_to_pop.append(key) 
 #%%
 #function 1 Cleaning out the dictionary with existing values pt3
-# return
+# return the new dict with the popped values
 for k in cats_to_pop:
     categories_new.pop(k)
 #%%
 print(transaction_type)
+#%%
+#function 2 getting the unique categories
+categories_new_unique = set()
+for value in categories_new.values():
+    categories_new_unique.add(value)
+
+#%% connecting to the database
+conn = get_connection()
+if conn:
+    print('Connection to the PostgreSQL established successfully.')
+else:
+    print('Connection to the PostgreSQL encountered an error.')
+#%%
+# Create a cursor using the connection object
+curr = conn.cursor()
+#%% # run your SQL query
+for h in categories_new_unique:
+    insert_stmt = "INSERT INTO transaction_type (id, type_name) VALUES (DEFAULT, '"+ h +"'); END"
+    curr.execute(insert_stmt)
+#%%
+# function 3 insert the new categories into the database
+
 #%%
 # step 4 add the dictionary values that still exist to either to the company table or the transaction_type table
 #************Make sure to write the insert statement like (DEFAULT, <company/category name>)************
