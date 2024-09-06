@@ -119,6 +119,7 @@ else:
 # Create a cursor using the connection object
 curr = conn.cursor()
 #%% # run your SQL query
+# not sure if curr.execute likes being in a for loop. Need to investigate how to properly add data.
 for h in categories_new_unique:
     curr.execute('''
                  INSERT INTO transaction_type (id, type_name) VALUES 
