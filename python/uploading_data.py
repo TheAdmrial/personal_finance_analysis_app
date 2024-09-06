@@ -120,8 +120,13 @@ else:
 curr = conn.cursor()
 #%% # run your SQL query
 for h in categories_new_unique:
-    insert_stmt = "INSERT INTO transaction_type (id, type_name) VALUES (DEFAULT, '"+ h +"'); END"
-    curr.execute(insert_stmt)
+    curr.execute('''
+                 INSERT INTO transaction_type (id, type_name) VALUES 
+                 (DEFAULT, %s);'''
+                 , (h,)
+                 )
+    conn.rollback
+    # conn.commit
 #%%
 # function 3 insert the new categories into the database
 
