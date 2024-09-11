@@ -121,13 +121,14 @@ curr = conn.cursor()
 #%% # run your SQL query
 # not sure if curr.execute likes being in a for loop. Need to investigate how to properly add data.
 for h in categories_new_unique:
-    curr.execute('''
-                 INSERT INTO transaction_type (id, type_name) VALUES 
-                 (DEFAULT, %s);'''
-                 , (h,)
-                 )
-    conn.rollback
-    # conn.commit
+    insert_stmt = '''INSERT INTO transaction_type (id, type_name) VALUES (DEFAULT, %s);'''
+    curr.execute(insert_stmt, (h,))
+    #conn.rollback
+#%%
+# with every commit need to pair with a close
+# once you're done with a connection you need to close it. 
+conn.commit()
+conn.close()
 #%%
 # function 3 insert the new categories into the database
 
