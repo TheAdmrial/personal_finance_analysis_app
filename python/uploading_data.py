@@ -132,8 +132,12 @@ def get_items_to_add(items_from_user = dict, results = pl.DataFrame):
     items_to_remove = []
     for key, value in items_from_user.items():
         for i in range(len(all_items)):
-            if value in categories[i]:
-                cats_to_pop.append(key) 
+            if value in all_items[i]:
+                items_to_remove.append(key) 
+    
+    for k in items_to_remove:
+        new_items.pop(k)
+    return new_items
 #%%
 #function 2 getting the unique categories
 categories_new_unique = set()
