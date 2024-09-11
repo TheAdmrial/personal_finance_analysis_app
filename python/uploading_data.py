@@ -77,6 +77,17 @@ transaction_results = pl.read_database_uri(query=transaction_query, uri=uri)
 company_results = pl.read_database_uri(query=company_query, uri=uri)
 
 #%%
+def get_existing_categories(uri = str):
+    '''
+    The goal of this function is to get all the current transaction_types that are in the database. This will be used to compare againsts the potentially new transaction_types. 
+    '''
+    return pl.read_database_uri(query='SELECT * FROM transaction_type ORDER BY id', uri=uri)
+def get_existing_compnaies(uri = str):
+    '''
+    The goal of this function is to get all the current companies that are in the database. This will be used to compare againsts the potentially new companies. 
+    '''
+    return pl.read_database_uri(query='SELECT * FROM company ORDER BY id', uri=uri)
+#%%
 # step 3 compare the dictionary values with what exisits in the list from the db. Kick out any values that match from the dictionary. 
 
 # getting the length of the results because the column will grow
@@ -84,6 +95,13 @@ max_cat_id = (len(transaction_results.select(pl.col('type_name'))))
 # saving the list of existing categories
 categories = list(transaction_results[0:max_cat_id,1])
 
+#%%
+def existing_options_to_list(results = pl.DataFrame):
+    '''
+    TODO: Add a note of what this is to do...
+    '''
+    max_id = (len(results.select(pl.col('type_name'))))
+    return list(results[0:max_id, 1])
 #%%
 #function 1 Cleaning out the dictionary with existing values pt1
 # comparing dict values to the list values
@@ -103,6 +121,19 @@ for k in cats_to_pop:
     categories_new.pop(k)
 #%%
 print(transaction_type)
+
+#%%
+def get_items_to_add(items_from_user = dict, results = pl.DataFrame):
+    '''
+    TODO: Add a note of the purpose of the function and what it does.
+    '''
+    all_items = existing_options_to_list(results)
+    new_items = items_from_user
+    items_to_remove = []
+    for key, value in items_from_user.items():
+        for i in range(len(all_items)):
+            if value in categories[i]:
+                cats_to_pop.append(key) 
 #%%
 #function 2 getting the unique categories
 categories_new_unique = set()
@@ -131,6 +162,8 @@ conn.commit()
 conn.close()
 #%%
 # function 3 insert the new categories into the database
+
+
 
 #%%
 # step 4 add the dictionary values that still exist to either to the company table or the transaction_type table
