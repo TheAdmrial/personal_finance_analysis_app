@@ -217,11 +217,7 @@ def adding_new_co_data(conn, unique_items_to_add = set):
 
 
 #%%
-# step 4 add the dictionary values that still exist to either to the company table or the transaction_type table
-#************Make sure to write the insert statement like (DEFAULT, <company/category name>)************
+# TODO:adding data to the transaction table
+# TODO:test the whole workflow
+# %%
 
-# actually writing to the db
-# df.write_database(table_name="records", connection=uri, engine="adbc")
-# %%
-transaction_results.select(pl.select(pl.col('type_name')))
-# %%
