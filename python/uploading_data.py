@@ -167,18 +167,18 @@ def get_items_to_add(items_from_user = dict, results = pl.DataFrame):
 #%%
 # **********adding_new_cat_data***********
 # Create a cursor using the connection object
-curr = conn.cursor()
+# curr = conn.cursor()
 #%% # run your SQL query
 # not sure if curr.execute likes being in a for loop. Need to investigate how to properly add data.
-for h in categories_new_unique:
-    insert_stmt = '''INSERT INTO transaction_type (id, type_name) VALUES (DEFAULT, %s);'''
-    curr.execute(insert_stmt, (h,))
+# for h in categories_new_unique:
+#     insert_stmt = '''INSERT INTO transaction_type (id, type_name) VALUES (DEFAULT, %s);'''
+#     curr.execute(insert_stmt, (h,))
     #conn.rollback
 #%%
 # with every commit need to pair with a close
 # once you're done with a connection you need to close it. 
-conn.commit()
-conn.close()
+# conn.commit()
+# conn.close()
 
 #%%
 def adding_new_cat_data(conn, unique_items_to_add = set):
@@ -199,8 +199,21 @@ def adding_new_cat_data(conn, unique_items_to_add = set):
 
 
 #%%
-# function 3 insert the new categories into the database
+def adding_new_co_data(conn, unique_items_to_add = set):
+    '''
 
+    This function will attempt to add the new companies to its dimention table. 
+    conn - This needs to be the database connection. This needs to be established beforehand
+    unique_items_to_add - this is the set that will have the unique items to add.
+    '''
+    curr = conn.cursor()
+    for h in unique_items_to_add:
+        insert_stmt = '''INSERT INTO company (id, company_name) VALUES (DEFAULT, %s);'''
+        curr.execute(insert_stmt, (h,))
+    conn.commit()
+    conn.close()
+
+    return print('Done! New values added to the company table.')
 
 
 #%%
