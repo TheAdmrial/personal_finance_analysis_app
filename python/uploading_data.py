@@ -5,6 +5,7 @@ from dotenv import load_dotenv, dotenv_values
 import psycopg2
 #%%
 # the postgresql db info
+# TODO: Where and when to add try-catch statements
 load_dotenv('C:/git/personal_fin_app/.env')
 test_user = os.environ.get("fin_app_test_db_user")
 test_db = os.environ.get("fin_app_test_db_name")
@@ -14,6 +15,9 @@ test_port = str(os.environ.get("fin_app_test_port"))
 #%%
 # making a function to connect to the postgresql DB
 def get_connection():
+    '''
+    This function connects to the database with the credentials provided above. 
+    '''
     try:
         return psycopg2.connect(
             database = test_db
@@ -25,6 +29,12 @@ def get_connection():
     except:
         return False
     
+#%% connecting to the database
+conn = get_connection()
+if conn:
+    print('Connection to the PostgreSQL established successfully.')
+else:
+    print('Connection to the PostgreSQL encountered an error.')
 #%%
 # uri = "postgresql://username:password@server:port/database"
 uri = "postgresql://%s:%s@%s:%s/%s" % (test_user, test_pass,test_server,test_port, test_db)
@@ -123,7 +133,11 @@ for k in cats_to_pop:
     categories_new.pop(k)
 #%%
 print(transaction_type)
-
+#%%
+#function 2 getting the unique categories
+categories_new_unique = set()
+for value in categories_new.values():
+    categories_new_unique.add(value)
 #%%
 def get_items_to_add(items_from_user = dict, results = pl.DataFrame):
     '''
@@ -144,18 +158,8 @@ def get_items_to_add(items_from_user = dict, results = pl.DataFrame):
     for value2 in new_items.values():
         categories_new_unique.add(value)
     return categories_new_unique
-#%%
-#function 2 getting the unique categories
-categories_new_unique = set()
-for value in categories_new.values():
-    categories_new_unique.add(value)
 
-#%% connecting to the database
-conn = get_connection()
-if conn:
-    print('Connection to the PostgreSQL established successfully.')
-else:
-    print('Connection to the PostgreSQL encountered an error.')
+
 #%%
 # Create a cursor using the connection object
 curr = conn.cursor()
@@ -170,6 +174,25 @@ for h in categories_new_unique:
 # once you're done with a connection you need to close it. 
 conn.commit()
 conn.close()
+
+#%%
+def adding_new_cat_data(conn, unique_items_to_add = set):
+    '''
+
+    This function will attempt to add the new categories to its dimention table. 
+    conn - This needs to be the database connection. This needs to be established beforehand
+    unique_items_to_add - this is the set that will have the unique items to add.
+    '''
+    curr = conn.cursor()
+    for h in unique_items_to_add:
+        insert_stmt = '''INSERT INTO transaction_type (id, type_name) VALUES (DEFAULT, %s);'''
+        curr.execute(insert_stmt, (h,))
+    conn.commit()
+    conn.close()
+
+    return print('Done! New values added to the transaction_type table.')
+
+
 #%%
 # function 3 insert the new categories into the database
 
