@@ -98,7 +98,9 @@ categories = list(transaction_results[0:max_cat_id,1])
 #%%
 def existing_options_to_list(results = pl.DataFrame):
     '''
-    TODO: Add a note of what this is to do...
+    This function will get all of the existing items from the database to a list. 
+    This is assuming that you are using the pl.read_database_uri to get your results
+    (See either get_existing_categories or get_existing_compnaies)
     '''
     max_id = (len(results.select(pl.col('type_name'))))
     return list(results[0:max_id, 1])
@@ -125,7 +127,7 @@ print(transaction_type)
 #%%
 def get_items_to_add(items_from_user = dict, results = pl.DataFrame):
     '''
-    TODO: Add a note of the purpose of the function and what it does.
+    This function will make a unique list of items to add to the database. 
     '''
     all_items = existing_options_to_list(results)
     new_items = items_from_user
@@ -134,10 +136,14 @@ def get_items_to_add(items_from_user = dict, results = pl.DataFrame):
         for i in range(len(all_items)):
             if value in all_items[i]:
                 items_to_remove.append(key) 
-    
+    # Subtracting out the items that I don't need. (Because they already exist in the database)
     for k in items_to_remove:
         new_items.pop(k)
-    return new_items
+    # making a unique list
+    categories_new_unique = set()
+    for value2 in new_items.values():
+        categories_new_unique.add(value)
+    return categories_new_unique
 #%%
 #function 2 getting the unique categories
 categories_new_unique = set()
