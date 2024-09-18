@@ -78,13 +78,15 @@ transaction_type = {'Apollotech': 'Income'
                     , 'name of several': 'Groceries'
                     , 'fits and styling': 'Clothes'}
 #%%
+# **********get_existing_categories**********
 # step 1 query the transaction_type and company tables
-transaction_query = 'SELECT * FROM transaction_type ORDER BY id'
-company_query = 'SELECT * FROM company ORDER BY id'
+# transaction_query = 'SELECT * FROM transaction_type ORDER BY id'
+# transaction_results = pl.read_database_uri(query=transaction_query, uri=uri)
 
 # step 2 
-transaction_results = pl.read_database_uri(query=transaction_query, uri=uri)
-company_results = pl.read_database_uri(query=company_query, uri=uri)
+# **********get_existing_compnaies**********
+# company_query = 'SELECT * FROM company ORDER BY id'
+# company_results = pl.read_database_uri(query=company_query, uri=uri)
 
 #%%
 def get_existing_categories(uri = str):
@@ -98,12 +100,13 @@ def get_existing_compnaies(uri = str):
     '''
     return pl.read_database_uri(query='SELECT * FROM company ORDER BY id', uri=uri)
 #%%
+# **********existing_options_to_list**********
 # step 3 compare the dictionary values with what exisits in the list from the db. Kick out any values that match from the dictionary. 
 
 # getting the length of the results because the column will grow
-max_cat_id = (len(transaction_results.select(pl.col('type_name'))))
+# max_cat_id = (len(transaction_results.select(pl.col('type_name'))))
 # saving the list of existing categories
-categories = list(transaction_results[0:max_cat_id,1])
+# categories = list(transaction_results[0:max_cat_id,1])
 
 #%%
 def existing_options_to_list(results = pl.DataFrame):
@@ -115,29 +118,30 @@ def existing_options_to_list(results = pl.DataFrame):
     max_id = (len(results.select(pl.col('type_name'))))
     return list(results[0:max_id, 1])
 #%%
+# **********get_items_to_add**********
 #function 1 Cleaning out the dictionary with existing values pt1
 # comparing dict values to the list values
-categories_new = transaction_type
-cats_to_pop = []
+# categories_new = transaction_type
+# cats_to_pop = []
 # print(categories_new)
 #%%
 #function 1 Cleaning out the dictionary with existing values pt2
-for key, value in transaction_type.items():
-    for i in range(len(categories)):
-        if value in categories[i]:
-            cats_to_pop.append(key) 
+# for key, value in transaction_type.items():
+#     for i in range(len(categories)):
+#         if value in categories[i]:
+#             cats_to_pop.append(key) 
 #%%
 #function 1 Cleaning out the dictionary with existing values pt3
 # return the new dict with the popped values
-for k in cats_to_pop:
-    categories_new.pop(k)
+# for k in cats_to_pop:
+#     categories_new.pop(k)
 #%%
-print(transaction_type)
+# print(transaction_type)
 #%%
 #function 2 getting the unique categories
-categories_new_unique = set()
-for value in categories_new.values():
-    categories_new_unique.add(value)
+# categories_new_unique = set()
+# for value in categories_new.values():
+#     categories_new_unique.add(value)
 #%%
 def get_items_to_add(items_from_user = dict, results = pl.DataFrame):
     '''
@@ -161,6 +165,7 @@ def get_items_to_add(items_from_user = dict, results = pl.DataFrame):
 
 
 #%%
+# **********adding_new_cat_data***********
 # Create a cursor using the connection object
 curr = conn.cursor()
 #%% # run your SQL query
