@@ -94,7 +94,7 @@ def get_existing_categories(uri = str):
     The goal of this function is to get all the current transaction_types that are in the database. This will be used to compare againsts the potentially new transaction_types. 
     '''
     return pl.read_database_uri(query='SELECT * FROM transaction_type ORDER BY id', uri=uri)
-def get_existing_compnaies(uri = str):
+def get_existing_companies(uri = str):
     '''
     The goal of this function is to get all the current companies that are in the database. This will be used to compare againsts the potentially new companies. 
     '''
@@ -220,4 +220,13 @@ def adding_new_co_data(conn, unique_items_to_add = set):
 # TODO:adding data to the transaction table
 # TODO:test the whole workflow
 # %%
-
+#%%
+# list out the workflow
+'''
+List of functions in order:
+1) get_existing_categories & get_existing_companies
+2) existing_options_to_list
+3) get_items_to_add
+4) get_connection
+5) adding_new_cat_data & adding_new_co_data
+'''
