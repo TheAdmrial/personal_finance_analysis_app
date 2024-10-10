@@ -8,7 +8,6 @@ import plotnine as plot
 fin_dat = pl.read_csv('c:/git/personal_fin_app/personal_finance_analysis_app/data/faker_fin_data.csv'
                       ,truncate_ragged_lines=True)
 
-# TODO: make an is_income column
 # TODO: programatically make a dictionary of the company/category and search terms
 # TODO: Add a provision to category that searches based on dollar amount and date 
 # For example, if you pay rent or utilities through venmo, then the only way to specify what category that expense belongs to is the date and amount. Or a situation where you pay some utilites and all rent to the same account, but on different transactions, then the only way to differentiate those expenses is on dollar amount, and possibly date if they're paid on different days. 
