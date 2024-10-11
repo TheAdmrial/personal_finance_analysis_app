@@ -84,4 +84,4 @@ all_combined2 = all_combined.select(
 all_combined2.write_database(table_name = 'transactions'
                              , connection = uri
                              , engine= 'adbc'
-                             , if_table_exists='replace')
+                             , if_table_exists='append')
