@@ -5,32 +5,32 @@ BEGIN;
 
 CREATE TABLE IF NOT EXISTS public.company
 (
-    id serial NOT NULL,
-    company_name character(250) COLLATE pg_catalog."default",
-    CONSTRAINT company_pkey PRIMARY KEY (id)
+    company_id BIGSERIAL NOT NULL,
+    company_name character varying(250) COLLATE pg_catalog."default",
+    CONSTRAINT company_pkey PRIMARY KEY (company_id)
 );
 
 CREATE TABLE IF NOT EXISTS public.transaction_type
 (
-    id serial NOT NULL,
-    type_name character(100) COLLATE pg_catalog."default",
-    CONSTRAINT transaction_type_pkey PRIMARY KEY (id)
+    transaction_type_id BIGSERIAL NOT NULL,
+    type_name character varying(100) COLLATE pg_catalog."default",
+    CONSTRAINT transaction_type_pkey PRIMARY KEY (transaction_type_id)
 );
 
 CREATE TABLE IF NOT EXISTS public.transactions
 (
-    id serial NOT NULL,
+    transaction_id BIGSERIAL NOT NULL,
     date date NOT NULL,
     amount numeric(6, 2) NOT NULL,
     type_id integer,
     company_id integer,
-    description character(400) COLLATE pg_catalog."default",
-    CONSTRAINT transactions_pkey PRIMARY KEY (id)
+    description character varying(400) COLLATE pg_catalog."default",
+    CONSTRAINT transactions_pkey PRIMARY KEY (transaction_id)
 );
 
 ALTER TABLE IF EXISTS public.transactions
     ADD CONSTRAINT transactions_company_id_fkey FOREIGN KEY (company_id)
-    REFERENCES public.company (id) MATCH SIMPLE
+    REFERENCES public.company (company_id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
@@ -38,7 +38,7 @@ ALTER TABLE IF EXISTS public.transactions
 
 ALTER TABLE IF EXISTS public.transactions
     ADD CONSTRAINT transactions_type_id_fkey FOREIGN KEY (type_id)
-    REFERENCES public.transaction_type (id) MATCH SIMPLE
+    REFERENCES public.transaction_type (transaction_type_id) MATCH SIMPLE
     ON UPDATE NO ACTION
     ON DELETE NO ACTION
     NOT VALID;
