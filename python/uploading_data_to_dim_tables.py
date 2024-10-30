@@ -93,12 +93,12 @@ def get_existing_categories(uri = str):
     '''
     The goal of this function is to get all the current transaction_types that are in the database. This will be used to compare againsts the potentially new transaction_types. 
     '''
-    return pl.read_database_uri(query='SELECT * FROM transaction_type ORDER BY id', uri=uri)
+    return pl.read_database_uri(query='SELECT * FROM transaction_type ORDER BY transaction_type_id', uri=uri)
 def get_existing_companies(uri = str):
     '''
     The goal of this function is to get all the current companies that are in the database. This will be used to compare againsts the potentially new companies. 
     '''
-    return pl.read_database_uri(query='SELECT * FROM company ORDER BY id', uri=uri)
+    return pl.read_database_uri(query='SELECT * FROM company ORDER BY company_id', uri=uri)
 #%%
 # **********existing_options_to_list**********
 # step 3 compare the dictionary values with what exisits in the list from the db. Kick out any values that match from the dictionary. 
@@ -109,15 +109,23 @@ def get_existing_companies(uri = str):
 # categories = list(transaction_results[0:max_cat_id,1])
 
 #%%
-def existing_options_to_list(results = pl.DataFrame):
+def existing_options_to_list(results = pl.DataFrame, name_column = ('type','company')):
     '''
     This function will get all of the existing items from the database to a list. 
     This is assuming that you are using the pl.read_database_uri to get your results
     (See either get_existing_categories or get_existing_compnaies)
+    
     '''
     #TODO: grab the column names from the DataFrame and put the proper column name in the pl.col() call to get max_id
-    max_id = (len(results.select(pl.col('company_name'))))
-    return list(results[0:max_id, 1])
+    #^^ this needs to be done! DON'T HARD CODE COLUMN NAMES!
+    if name_column == 'type':
+        max_id = (len(results.select(pl.col('type_name'))))
+        return list(results[0:max_id, 1])
+    elif name_column == 'company':
+        max_id = (len(results.select(pl.col('company_name'))))
+        return list(results[0:max_id, 1])
+    else:
+        print('You have not selected a proper column name. Please choose only type or company')
 #%%
 # **********get_items_to_add**********
 #function 1 Cleaning out the dictionary with existing values pt1
@@ -144,6 +152,7 @@ def existing_options_to_list(results = pl.DataFrame):
 # for value in categories_new.values():
 #     categories_new_unique.add(value)
 #%%
+#TODO: Add a function to make a dictionary with the existing vaules. (Likely there is a df_to_dict function already)
 def get_items_to_add(items_from_user = dict, results = pl.DataFrame):
     '''
     This function will make a unique list of items to add to the database. 
@@ -191,7 +200,7 @@ def adding_new_cat_data(conn, unique_items_to_add = set):
     '''
     curr = conn.cursor()
     for h in unique_items_to_add:
-        insert_stmt = '''INSERT INTO transaction_type (id, type_name) VALUES (DEFAULT, %s);'''
+        insert_stmt = '''INSERT INTO transaction_type (transaction_type_id, type_name) VALUES (DEFAULT, %s);'''
         curr.execute(insert_stmt, (h,))
     conn.commit()
     conn.close()
@@ -209,7 +218,7 @@ def adding_new_co_data(conn, unique_items_to_add = set):
     '''
     curr = conn.cursor()
     for h in unique_items_to_add:
-        insert_stmt = '''INSERT INTO company (id, company_name) VALUES (DEFAULT, %s);'''
+        insert_stmt = '''INSERT INTO company (company_id, company_name) VALUES (DEFAULT, %s);'''
         curr.execute(insert_stmt, (h,))
     conn.commit()
     conn.close()
@@ -235,17 +244,21 @@ List of functions in order:
 #---------TESTING THE FUNCTIONS---------------#
 uri = "postgresql://%s:%s@%s:%s/%s" % (test_user, test_pass,test_server,test_port, test_db)
 # Step 1: get the existing companies (or categories)
-co_results = get_existing_companies(uri)
+# co_results = get_existing_companies(uri)
+type_results = get_existing_categories(uri)
 #%%
 # Step 2: getting the existing options into a list
-list_existing_cos = existing_options_to_list(co_results)
+# list_existing_cos = existing_options_to_list(co_results,'company')
+list_existing_types = existing_options_to_list(type_results,'type')
 #%%
 # Step 3: getting the items to add to the database
-cos_to_add = get_items_to_add(company, co_results)
+# cos_to_add = get_items_to_add(company, co_results)
+types_to_add = get_items_to_add(transaction_type, type_results)
 #%%
 # Step 4: 
 # a) Connecting to the database
 conn = get_connection()
 #%%
 # b) Writing the new data to the database
-adding_new_co_data(conn = conn, unique_items_to_add=cos_to_add)
+# adding_new_co_data(conn = conn, unique_items_to_add=cos_to_add)
+adding_new_co_data(conn = conn, unique_items_to_add=types_to_add)
