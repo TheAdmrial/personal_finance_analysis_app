@@ -261,4 +261,4 @@ conn = get_connection()
 #%%
 # b) Writing the new data to the database
 # adding_new_co_data(conn = conn, unique_items_to_add=cos_to_add)
-adding_new_co_data(conn = conn, unique_items_to_add=types_to_add)
+adding_new_cat_data(conn = conn, unique_items_to_add=types_to_add)
