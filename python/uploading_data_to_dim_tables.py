@@ -244,22 +244,23 @@ List of functions in order:
 #---------TESTING THE FUNCTIONS---------------#
 uri = "postgresql://%s:%s@%s:%s/%s" % (test_user, test_pass,test_server,test_port, test_db)
 # Step 1: get the existing companies (or categories)
-# co_results = get_existing_companies(uri)
+co_results = get_existing_companies(uri)
 type_results = get_existing_categories(uri)
 #%%
 # Step 2: getting the existing options into a list
-# list_existing_cos = existing_options_to_list(co_results,'company')
+list_existing_cos = existing_options_to_list(co_results,'company')
 list_existing_types = existing_options_to_list(type_results,'type')
 #%%
 # Step 3: getting the items to add to the database
-# cos_to_add = get_items_to_add(company, list_existing_cos)
+cos_to_add = get_items_to_add(company, list_existing_cos)
 types_to_add = get_items_to_add(transaction_type, list_existing_types)
 #%%
 # Step 4: 
 # a) Connecting to the database
 conn = get_connection()
+# adding_new_co_data(conn = conn, unique_items_to_add=cos_to_add)
 #%%
 # b) Writing the new data to the database
-# adding_new_co_data(conn = conn, unique_items_to_add=cos_to_add)
+# conn = get_connection()
 adding_new_cat_data(conn = conn, unique_items_to_add=types_to_add)
 # %%
