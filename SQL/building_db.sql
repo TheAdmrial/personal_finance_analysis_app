@@ -19,12 +19,12 @@ CREATE TABLE IF NOT EXISTS public.transaction_type
 
 CREATE TABLE IF NOT EXISTS public.transactions
 (
-    transaction_id BIGSERIAL NOT NULL,
     date date NOT NULL,
     amount numeric(6, 2) NOT NULL,
     type_id integer,
     company_id integer,
     description character varying(400) COLLATE pg_catalog."default",
+    transaction_id BIGSERIAL NOT NULL,
     CONSTRAINT transactions_pkey PRIMARY KEY (transaction_id)
 );
 
