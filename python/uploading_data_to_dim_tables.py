@@ -153,11 +153,11 @@ def existing_options_to_list(results = pl.DataFrame, name_column = ('type','comp
 #     categories_new_unique.add(value)
 #%%
 #TODO: Add a function to make a dictionary with the existing vaules. (Likely there is a df_to_dict function already)
-def get_items_to_add(items_from_user = dict, results = pl.DataFrame):
+def get_items_to_add(items_from_user = dict, results = list):
     '''
     This function will make a unique list of items to add to the database. 
     '''
-    all_items = existing_options_to_list(results)
+    all_items = results
     new_items = items_from_user
     items_to_remove = []
     for key, value in items_from_user.items():
@@ -253,7 +253,7 @@ list_existing_types = existing_options_to_list(type_results,'type')
 #%%
 # Step 3: getting the items to add to the database
 # cos_to_add = get_items_to_add(company, co_results)
-types_to_add = get_items_to_add(transaction_type, type_results)
+types_to_add = get_items_to_add(transaction_type, list_existing_types)
 #%%
 # Step 4: 
 # a) Connecting to the database
@@ -262,3 +262,4 @@ conn = get_connection()
 # b) Writing the new data to the database
 # adding_new_co_data(conn = conn, unique_items_to_add=cos_to_add)
 adding_new_cat_data(conn = conn, unique_items_to_add=types_to_add)
+# %%
