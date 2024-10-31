@@ -252,7 +252,7 @@ type_results = get_existing_categories(uri)
 list_existing_types = existing_options_to_list(type_results,'type')
 #%%
 # Step 3: getting the items to add to the database
-# cos_to_add = get_items_to_add(company, co_results)
+# cos_to_add = get_items_to_add(company, list_existing_cos)
 types_to_add = get_items_to_add(transaction_type, list_existing_types)
 #%%
 # Step 4: 
