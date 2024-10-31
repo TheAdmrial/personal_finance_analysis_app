@@ -52,7 +52,7 @@ with_categories = semi_clean_data.join(other = categories
 with_categories2 = with_categories.select(
     pl.col('date')
     , pl.col('amount')
-    , pl.col('id').alias('type_id')
+    , pl.col('transaction_type_id').alias('type_id')
     , pl.col('company')
     , pl.col('description')
 )
@@ -67,10 +67,11 @@ all_combined = with_categories2.join(other = companies
 # rename the new id column to company_id
 # drop the company string column
 all_combined2 = all_combined.select(
-     pl.col('date')
+    # pl.col('transaction_id')
+     pl.col('date').str.to_date()
     , pl.col('amount')
     , pl.col('type_id')
-    , pl.col('id').alias('company_id')
+    , pl.col('company_id')
     , pl.col('description')
 )
 #%% 
@@ -85,3 +86,4 @@ all_combined2.write_database(table_name = 'transactions'
                              , connection = uri
                              , engine= 'adbc'
                              , if_table_exists='append')
+# %%
