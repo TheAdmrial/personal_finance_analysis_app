@@ -179,6 +179,43 @@ def filling_in_new_values(df: pl.DataFrame
     
     return df, dict_to_update
 
+
+def validate_and_clean_data(dataframe: pl.DataFrame) -> Optional[pl.DataFrame]:
+    """
+    Validate and clean input dataframe before database upload.
+
+    Args:
+        dataframe (pl.DataFrame): Inupt dataframe to validate
+
+    Returns: 
+        Optional[pl.DataFrame]: Cleaned dataframe or None if validation fails
+    """
+    try: 
+        #Check for required columns
+        required_columns = ['date', 'amount', 'category', 'company', 'description']
+        for col in required_columns:
+            if col not in dataframe.columns:
+                raise ValueError(f'Missing required column: {col}')
+            
+        # Type checking and cleaning
+        cleaned_df = dataframe.with_columns([
+            pl.col('date').str.to_date(format='%Y-%m-%d')
+            , pl.col('amount').cast(pl.Float64)
+            , pl.col('category').cast(pl.Utf8)
+            , pl.col('company').cast(pl.Utf8)
+            , pl.col('description').cast(pl.Utf8)
+        ])
+
+        # Optional: Additional data validation
+        if cleaned_df.null_count().sum() > 0:
+            print("Warning: DataFrame contains null values after cleaning.")
+
+        return cleaned_df
+
+    except Exception as e:
+        print(f"Data validation error: {e}")
+        return None
+
 #%%
 company = { 'Football Is Good':'Ftbl Co'
            , 'Maple Gaming':'Maple Games'

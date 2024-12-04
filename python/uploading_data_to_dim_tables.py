@@ -3,6 +3,8 @@ import polars as pl
 import os
 from dotenv import load_dotenv, dotenv_values
 import psycopg2
+from typing import Optional, Union, Set, Dict
+
 #%%
 # the postgresql db info
 # TODO: Where and when to add try-catch statements
@@ -14,20 +16,61 @@ test_server = os.environ.get("fin_app_test_server_name")
 test_port = str(os.environ.get("fin_app_test_port"))
 #%%
 # making a function to connect to the postgresql DB
-def get_connection():
+def get_connection(
+        db: Optional[str] = None
+        , user: Optional[str] = None
+        , password: Optional[str] = None
+        , host: Optional[str] = None
+        , port: Optional[str] = None
+) -> Optional[psycopg2.extensions.connection]:
     '''
-    This function connects to the database with the credentials provided above. 
+    Establish a connection to the PostgreSQL database with comprehensive error handling.
+    
+    Args:
+        db (str, optional): Database name. Uses environment variable if not provided.
+        user (str, optional): Database username. Uses environment variable if not provided.
+        password (str, optional): Database password. Uses environment variable if not provided.
+        host (str, optional): Database host. Uses environment variable if not provided.
+        port (str, optional): Database port. Uses environment variable if not provided.
+    
+    Returns:
+        psycopg2.extensions.connection or None: Database connection object or None if connection fails
     '''
     try:
-        return psycopg2.connect(
-            database = test_db
-            , user = test_user
-            , password = test_pass
-            , host = test_server
-            , port = test_port
+        # Use environment variables as fallback if parameters not provided
+        database = db or os.environ.get('fin_app_test_db_name')
+        username = user or os.environ.get('fin_app_test_db_user')
+        passwd = password or os.environ.get('fin_app_test_db_pass')
+        server = host or os.environ.get('fin_app_test_server_name')
+        db_port = port or str(os.environ.get('fin_app_test_port'))
+
+        # Validate all required connection parameters
+        if not all([database, username, passwd, server, db_port]):
+            raise ValueError("Missing reqired database connection parameters")
+        
+        connection = psycopg2.connect(
+            database = database
+            , user = username
+            , password = passwd
+            , host = server 
+            , port = db_port 
         )
-    except:
-        return False
+
+        # Additional connection configuration
+        connection.set_isolation_level(psycopg2.extensions.ISOLATION_LEVEL_AUTOCOMMIT)
+
+        print('Connection to PostgreSQL established successfully.')
+        return connection
+    
+    except psycopg2.Error as db_error:
+        print(f"Database Connection Error: {db_error}")
+        return None
+    except ValueError as val_error:
+        print(f"Configuration Error: {val_error}")
+        return None
+    except Exception as e:
+        print(f"Unexpected error connecting to database: {e}")
+        return None
     
 #%% connecting to the database
 conn = get_connection()
@@ -89,16 +132,47 @@ transaction_type = {'Apollotech': 'Income'
 # company_results = pl.read_database_uri(query=company_query, uri=uri)
 
 #%%
-def get_existing_categories(uri = str):
+def get_existing_categories(uri: str) -> Optional[pl.DataFrame]:
     '''
-    The goal of this function is to get all the current transaction_types that are in the database. This will be used to compare againsts the potentially new transaction_types. 
+    Retrieve existing transaction categories from the database with error handling.
+    
+    Args:
+        uri (str): Database connection URI
+    
+    Returns:
+        Optional[pl.DataFrame]: DataFrame of existing categories or None if error occurs
     '''
-    return pl.read_database_uri(query='SELECT * FROM transaction_type ORDER BY transaction_type_id', uri=uri)
+    try:
+        categories = pl.read_database_uri(
+            query='SELECT * FROM transaction_type ORDER BY transaction_type_id'
+            , uri=uri
+            )
+        return categories
+    
+    except Exception as e:
+        print(f'Error retrieving categories: {e}')
+        return None
+
 def get_existing_companies(uri = str):
     '''
-    The goal of this function is to get all the current companies that are in the database. This will be used to compare againsts the potentially new companies. 
+    Retrieve existing transaction companies from the database with error handling.
+    
+    Args:
+        uri (str): Database connection URI
+    
+    Returns:
+        Optional[pl.DataFrame]: DataFrame of existing categories or None if error occurs
     '''
-    return pl.read_database_uri(query='SELECT * FROM company ORDER BY company_id', uri=uri)
+    try:
+        companies = pl.read_database_uri(
+            query='SELECT * FROM company ORDER BY company_id'
+            , uri=uri)
+        return companies
+    
+    except Exception as e:
+        print(f'Error retrieving categories: {e}')
+        return None
+
 #%%
 # **********existing_options_to_list**********
 # step 3 compare the dictionary values with what exisits in the list from the db. Kick out any values that match from the dictionary. 
@@ -191,23 +265,49 @@ def get_items_to_add(items_from_user = dict, results = list):
 # conn.close()
 
 #%%
-def adding_new_cat_data(conn, unique_items_to_add = set):
+def adding_new_cat_data(conn: psycopg2.extensions.connection
+                        , unique_items_to_add: Set[str]) -> bool:
     '''
-
-    This function will attempt to add the new categories to its dimention table. 
-    conn - This needs to be the database connection. This needs to be established beforehand
-    unique_items_to_add - this is the set that will have the unique items to add.
+    Add new transaction categories to the database with robust error handling.
+    
+    Args:
+        conn (psycopg2.extensions.connection): Active database connection
+        unique_items_to_add (Set[str]): Set of unique categories to add
+    
+    Returns:
+        bool: True if successful, False otherwise
     '''
-    curr = conn.cursor()
-    for h in unique_items_to_add:
-        insert_stmt = '''INSERT INTO transaction_type (transaction_type_id, type_name) VALUES (DEFAULT, %s);'''
-        curr.execute(insert_stmt, (h,))
-    conn.commit()
-    conn.close()
+    if not conn or conn.closed:
+        print('Invalid database connection.')
+        return False
+    
+    try:
+        with conn.cursor() as curr:
+            for category in unique_items_to_add:
+                # Validate input to prevent SQL injection
+                if not isinstance(category, str) or not category.strip():
+                    print(f'Skipping invalid category: {category}')
+                    continue
+                insert_stmt = '''INSERT INTO transaction_type (transaction_type_id, type_name) VALUES (DEFAULT, %s);'''
+                curr.execute(insert_stmt, (h,))
+        conn.commit()
+        print(f'Successfully added {len(unique_items_to_add)} new transactions types.')
+        return True
 
-    return print('Done! New values added to the transaction_type table.')
+    except psycopg2.Error as db_error:
+        print(f'Database Error: {db_error}')
+        conn.rollback()
+        return False
+    except Exception as e:
+        print(f'Unexpected error adding transaction types: {e}')
+        conn.rollback()
+        return False
+    finally:
+        #Best practice to close connect when done
+        if conn and not conn.closed:
+            conn.close()
 
-
+            
 #%%
 def adding_new_co_data(conn, unique_items_to_add = set):
     '''
