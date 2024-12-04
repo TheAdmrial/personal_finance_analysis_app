@@ -289,7 +289,7 @@ def adding_new_cat_data(conn: psycopg2.extensions.connection
                     print(f'Skipping invalid category: {category}')
                     continue
                 insert_stmt = '''INSERT INTO transaction_type (transaction_type_id, type_name) VALUES (DEFAULT, %s);'''
-                curr.execute(insert_stmt, (h,))
+                curr.execute(insert_stmt, (category,))
         conn.commit()
         print(f'Successfully added {len(unique_items_to_add)} new transactions types.')
         return True
@@ -307,7 +307,7 @@ def adding_new_cat_data(conn: psycopg2.extensions.connection
         if conn and not conn.closed:
             conn.close()
 
-            
+
 #%%
 def adding_new_co_data(conn, unique_items_to_add = set):
     '''
