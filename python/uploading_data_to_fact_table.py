@@ -1,8 +1,9 @@
 #%%
 import polars as pl
 import os
-from dotenv import load_dotenv, dotenv_values
+from dotenv import load_dotenv
 import psycopg2
+from typing import Optional
 from uploading_data_to_dim_tables import get_existing_categories, get_existing_companies, get_connection
 #%%
 # the postgresql db info
