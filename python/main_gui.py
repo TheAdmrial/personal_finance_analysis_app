@@ -1,10 +1,17 @@
 import PySimpleGUI as sg
 
 # All the stuff inside your window.
-layout = [  [sg.Text('Date'), sg.Text('Description'), sg.Text('Amount')]
-          ,[sg.Text(f'<display date>'),sg.Text(f'<display desc.>'),sg.Text(f'$ <display amount>')]
-          ,[sg.Text('Company'),sg.Text('Category')]
-          ,[sg.Input(),sg.Input()]
+layout = [ [sg.Column([[sg.Text('Date', p = 0, border_width=0)]
+                        ,[sg.Text(f'<display date>',p=0,border_width=0)]
+                        , [sg.Text('Company',p = 0, border_width=0)]
+                        ,[sg.Input(p = 0, border_width=0)]]) #column 1 
+            ,sg.Column([[sg.Text('Description', p = 0, border_width=0)]
+                          ,[sg.Text(f'<display desc.>', p = 0, border_width=0)]
+                          ,[sg.Text()]]) # column 2
+            , sg.Column([[sg.Text('Amount', p = 0, border_width=0)]
+                           ,[sg.Text(f'$ <display amount>', p = 0, border_width=0)]
+                           ,[sg.Text('Category', p = 0, border_width=0)]
+                           ,[sg.Input(p = 0, border_width=0)]])] # column 3
           ,[sg.Button('Confirm'), sg.Button('Skip'),sg.Button('Cancel')] ]
 
 # Create the Window
