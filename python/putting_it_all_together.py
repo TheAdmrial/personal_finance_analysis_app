@@ -1,9 +1,10 @@
 #---------------------ORDER OF OPERATIONS---------------------#
 '''
 1) Clean the data
-    a) getting the names from the description
-    b) translating that into a dictionary
-    c) ultinately, add the transaction_types and the companies to the data set. 
+    a) selecting out the columns that I need 
+    b) getting the names from the description
+    c) translating that into a dictionary
+    d) ultinately, add the transaction_types and the companies to the data set. 
 2) Add new data to the dim tables
     This is done first because if I were to add the data to the fact table there would be no ids for the potentially new companies and transaction_types
 3) Add new data to the fact table
