@@ -78,12 +78,110 @@ def map_dict_to_col(df: pl.DataFrame
         )
     return df
 #%%
-def filling_in_new_values(df: pl.DataFrame
-                          , desc_col_name: str
-                          , column_name: str
-                          , dict_to_update: dict
-                          , amount_context: bool = True
-                          ) -> tuple[pl.DataFrame, Dict[str,str]] :
+# This commented out section came from Claude. I'm debating if I'd like to leave it in. 
+# def filling_in_new_values(df: pl.DataFrame
+#                           , desc_col_name: str
+#                           , column_name: str
+#                           , dict_to_update: dict
+#                           , amount_context: bool = True
+#                           ) -> tuple[pl.DataFrame, Dict[str,str]] :
+#     '''
+#     The idea behind this fn is that every month you'll be adding your bank statment.
+#     There will most likely be newer transactions that need to be categoriezed. 
+#     This fn will ask how you'd like to do so.
+
+#     df = dataframe that you're working with
+#     desc_col_name = the name of a description-like column you're looking for
+#     column_name = the name of the column with possible null values
+#     dict_to_update = the dictionary of the values to apply to you're working dataframe. 
+
+#     Args:
+#         df (pl.DataFrame): DataFrame to process
+#         desc_col_name (str): Column name for description
+#         column_name (str): Column to fill with new values
+#         dict_to_update (Dict[str, str]): Dictionary to update with new mappings
+#         amount_context (bool): Whether to include amount context in manual entry
+    
+#     Returns:
+#         tuple: Updated DataFrame and updated dictionary
+#     '''
+#     def get_transaction_context(row):
+#         """Provide context for the transaction to aid categorization."""
+#         context = f"Description: {row[desc_col_name]}"
+#         if amount_context:
+#             context += f"\nAmount: ${row['amount']:.2f}"
+#         return context
+
+
+#     df_null_values = df.select(column_name).null_count()[0,0]
+
+#     while df_null_values != 0:
+#         print(f'\n--- Categorization Assistant ---')
+#         print(f'Number of Uncategorized Transactions: {df_null_values}')
+        
+#         # Get the first uncategorized transaction
+
+#         top_transaction = df.select(
+#             pl.col(desc_col_name)
+#             ,pl.col('amount')
+#             ,pl.col(column_name)
+#         ).filter(c(column_name).is_null()).head(1)
+
+#         # Extract transaction details
+#         trans_desc = top_transaction[0, desc_col_name]
+#         trans_amount = top_transaction[0, 'amount']
+
+#         # Provide transaction context
+#         print("\n--- Transaction Context ---")
+#         print(f"Description: {trans_desc}")
+#         print(f"Amount: ${trans_amount:.2f}")
+
+#         # Enhanced input prompts
+#         print("\nHow would you like to categorize this transaction?")
+#         match_options = [
+#             "1. Add Company",
+#             "2. Add Category",
+#             "3. Skip for Now",
+#             "4. View Recent Similar Transactions"
+#         ]
+
+#         for option in match_options:
+#             print(option)
+        
+#         choice = input("Enter your choice (1-4): ")
+        
+#         if choice == '1':
+#             company_name = input("Enter the company name: ")
+#             dict_to_update[trans_desc] = company_name
+#         elif choice == '2':
+#             category_name = input("Enter the transaction category: ")
+#             dict_to_update[trans_desc] = category_name
+#         elif choice == '3':
+#             # Simple skip
+#             break
+#         elif choice == '4':
+#             # Find and display similar recent transactions
+#             similar_transactions = df.filter(
+#                 (pl.col(desc_col_name).str.contains(trans_desc, literal=True)) | 
+#                 (pl.col('amount') == trans_amount)
+#             ).select(desc_col_name, 'amount', column_name)
+            
+#             print("\n--- Similar Recent Transactions ---")
+#             print(similar_transactions)
+            
+#             continue
+#         else:
+#             print("Invalid choice. Please try again.")
+#             continue
+        
+#         # Re-run categorization with updated dictionary
+#         df = map_dict_to_col(df, desc_col_name, column_name, dict_to_update)
+#         df_null_values = df.select(column_name).null_count()[0, 0]
+    
+#     return df, dict_to_update
+
+#%%
+def filling_in_new_values(df = pl.DataFrame, desc_col_name = str, column_name = str, dict_to_update = dict):
     '''
     The idea behind this fn is that every month you'll be adding your bank statment.
     There will most likely be newer transactions that need to be categoriezed. 
@@ -93,128 +191,64 @@ def filling_in_new_values(df: pl.DataFrame
     desc_col_name = the name of a description-like column you're looking for
     column_name = the name of the column with possible null values
     dict_to_update = the dictionary of the values to apply to you're working dataframe. 
-
-    Args:
-        df (pl.DataFrame): DataFrame to process
-        desc_col_name (str): Column name for description
-        column_name (str): Column to fill with new values
-        dict_to_update (Dict[str, str]): Dictionary to update with new mappings
-        amount_context (bool): Whether to include amount context in manual entry
-    
-    Returns:
-        tuple: Updated DataFrame and updated dictionary
     '''
-    def get_transaction_context(row):
-        """Provide context for the transaction to aid categorization."""
-        context = f"Description: {row[desc_col_name]}"
-        if amount_context:
-            context += f"\nAmount: ${row['amount']:.2f}"
-        return context
-
-
     df_null_values = df.select(column_name).null_count()[0,0]
-
     while df_null_values != 0:
-        print(f'\n--- Categorization Assistant ---')
-        print(f'Number of Uncategorized Transactions: {df_null_values}')
-        
-        # Get the first uncategorized transaction
-
-        top_transaction = df.select(
-            pl.col(desc_col_name)
-            ,pl.col('amount')
-            ,pl.col(column_name)
-        ).filter(c(column_name).is_null()).head(1)
-
-        # Extract transaction details
-        trans_desc = top_transaction[0, desc_col_name]
-        trans_amount = top_transaction[0, 'amount']
-
-        # Provide transaction context
-        print("\n--- Transaction Context ---")
-        print(f"Description: {trans_desc}")
-        print(f"Amount: ${trans_amount:.2f}")
-
-        # Enhanced input prompts
-        print("\nHow would you like to categorize this transaction?")
-        match_options = [
-            "1. Add Company",
-            "2. Add Category",
-            "3. Skip for Now",
-            "4. View Recent Similar Transactions"
-        ]
-
-        for option in match_options:
-            print(option)
-        
-        choice = input("Enter your choice (1-4): ")
-        
-        if choice == '1':
-            company_name = input("Enter the company name: ")
-            dict_to_update[trans_desc] = company_name
-        elif choice == '2':
-            category_name = input("Enter the transaction category: ")
-            dict_to_update[trans_desc] = category_name
-        elif choice == '3':
-            # Simple skip
-            break
-        elif choice == '4':
-            # Find and display similar recent transactions
-            similar_transactions = df.filter(
-                (pl.col(desc_col_name).str.contains(trans_desc, literal=True)) | 
-                (pl.col('amount') == trans_amount)
-            ).select(desc_col_name, 'amount', column_name)
-            
-            print("\n--- Similar Recent Transactions ---")
-            print(similar_transactions)
-            
-            continue
-        else:
-            print("Invalid choice. Please try again.")
-            continue
-        
-        # Re-run categorization with updated dictionary
+        print('Number of Null Values to fill: %s' % df_null_values)
+        print('\n')
+        top_desc = df.select(c(desc_col_name, column_name)).filter(c(column_name).is_null()).head(1)
+        print(top_desc[0,0])
+        print()
+        print('What would you like to match on?')
+        match_on = input("What would you like to match:")
+        print()
+        print('What name do you want in the column?')
+        name_in_col = input("What name will go in the column:")
+        print()
+        print('Adding %s and %s to the dictionary' % (match_on, name_in_col))
+        dict_to_update.update({match_on:name_in_col})
         df = map_dict_to_col(df, desc_col_name, column_name, dict_to_update)
-        df_null_values = df.select(column_name).null_count()[0, 0]
+        df_null_values = df.select(c(column_name)).null_count()[0,0]
     
-    return df, dict_to_update
+    return df
 
 
-def validate_and_clean_data(dataframe: pl.DataFrame) -> Optional[pl.DataFrame]:
-    """
-    Validate and clean input dataframe before database upload.
+# This commented out section came from Claude. I'm debating if I'd like to leave it in. 
+# def validate_and_clean_data(dataframe: pl.DataFrame) -> Optional[pl.DataFrame]:
+#     """
+#     Validate and clean input dataframe before database upload.
 
-    Args:
-        dataframe (pl.DataFrame): Inupt dataframe to validate
+#     Args:
+#         dataframe (pl.DataFrame): Inupt dataframe to validate
 
-    Returns: 
-        Optional[pl.DataFrame]: Cleaned dataframe or None if validation fails
-    """
-    try: 
-        #Check for required columns
-        required_columns = ['date', 'amount', 'category', 'company', 'description']
-        for col in required_columns:
-            if col not in dataframe.columns:
-                raise ValueError(f'Missing required column: {col}')
+#     Returns: 
+#         Optional[pl.DataFrame]: Cleaned dataframe or None if validation fails
+#     """
+#     try: 
+#         #Check for required columns
+#         required_columns = ['date', 'amount', 'category', 'company', 'description']
+#         for col in required_columns:
+#             if col not in dataframe.columns:
+#                 raise ValueError(f'Missing required column: {col}')
             
-        # Type checking and cleaning
-        cleaned_df = dataframe.with_columns([
-            pl.col('date').str.to_date(format='%Y-%m-%d')
-            , pl.col('amount').cast(pl.Float64)
-            , pl.col('category').cast(pl.Utf8)
-            , pl.col('company').cast(pl.Utf8)
-            , pl.col('description').cast(pl.Utf8)
-        ])
+#         # Type checking and cleaning
+#         cleaned_df = dataframe.with_columns([
+#             pl.col('date').str.to_date(format='%Y-%m-%d')
+#             , pl.col('amount').cast(pl.Float64)
+#             , pl.col('category').cast(pl.Utf8)
+#             , pl.col('company').cast(pl.Utf8)
+#             , pl.col('description').cast(pl.Utf8)
+#         ])
 
-        # Optional: Additional data validation
-        if cleaned_df.null_count().sum() > 0:
-            print("Warning: DataFrame contains null values after cleaning.")
+#         # Optional: Additional data validation
+#         if cleaned_df.null_count().sum() > 0:
+#             print("Warning: DataFrame contains null values after cleaning.")
 
-        return cleaned_df
+#         return cleaned_df
 
-    except Exception as e:
-        print(f"Data validation error: {e}")
-        return None
+#     except Exception as e:
+#         print(f"Data validation error: {e}")
+#         return None
 
 #%%
 company = { 'Football Is Good':'Ftbl Co'
