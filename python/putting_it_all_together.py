@@ -1,3 +1,6 @@
+
+from uploading_data_to_dim_tables import get_existing_categories, get_existing_companies, get_connection
+
 #---------------------ORDER OF OPERATIONS---------------------#
 '''
 1) Clean the data
