@@ -1,9 +1,9 @@
 #%%
 import polars as pl
 import os
-from dotenv import load_dotenv, dotenv_values
+from dotenv import load_dotenv
 import psycopg2
-from typing import Optional, Union, Set, Dict
+from typing import Optional, Set
 
 #%%
 # the postgresql db info
