@@ -1,4 +1,4 @@
-
+#%%
 from uploading_data_to_dim_tables import get_existing_categories, get_existing_companies, get_connection
 
 #---------------------ORDER OF OPERATIONS---------------------#
@@ -14,3 +14,5 @@ from uploading_data_to_dim_tables import get_existing_categories, get_existing_c
     Keep in mind, I need to replace the 'dimention columns' with their corresponding ids.
 4) connect the PowerBI dashboard with the Database
 '''
+
+#%%
