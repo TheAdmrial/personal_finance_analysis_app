@@ -1,0 +1,726 @@
+date,amount,description,origin,category,company,type
+2022-01-03,0.72,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-01-03,10.28,BYU IDAHO             REXBURG      ID US,Adam Beehive,Refunds,BYU-I,Expense
+2022-01-03,755,Deposit,Adam Beehive,Income,Plasma Transfer,Income
+2022-01-04,0.16,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-01-04,27.84,TST* Righteous Slice  Rexburg      ID US,Adam Beehive,Dates,Righteous Slice,Expense
+2022-01-04,839,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-01-05,1.8900000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-01-05,7.4,DEL TACO #1260        REXBURG      ID US,Adam Beehive,Dates,Del Taco,Expense
+2022-01-05,51.37,AMAZON.COM*1W9NE6913  SEATTLE      WA US,Adam Beehive,Fun Money,Amazon,Expense
+2022-01-05,54.339999999999996,AMAZON.COM*E43A86N43  SEATTLE      WA US,Adam Beehive,Fun Money,Amazon,Expense
+2022-01-05,0.45,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-01-05,200,ATM Withdrawal,Maryna Beehive,Fun Money,Beehive Fed Credit Union,Expense
+2022-01-05,125,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-01-06,786,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-01-07,1.34,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-01-07,24.330000000000002,"COINBASE, INC.        8325639309   DE US",Adam Beehive,Misc.,Coinbase,Expense
+2022-01-07,24.330000000000002,"COINBASE, INC.        8325639309   DE US",Adam Beehive,Misc.,Coinbase,Expense
+2022-01-07,256.6,MRS POWELLS LLC,Adam Beehive,Income,Mrs. Powell's,Income
+2022-01-08,12.06,WENDY'S #12308        REXBURG      ID US,Adam Beehive,Dates,Wendy's,Expense
+2022-01-08,34.260000000000005,WM SUPERCENTER #      AMMON        ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-01-08,26.16,SAMSCLUB #6345        IDAHO FALLS  ID US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-01-10,2.52,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-01-10,3342,BYU IDAHO,Adam Beehive,Misc.,BYU-I,Expense
+2022-01-10,48,DESERET BOOK CO #77   REXBURG      ID US,Maryna Beehive,Clothing,Deseret Book,Expense
+2022-01-10,364,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-01-11,0.8400000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-01-11,97.16,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-01-11,276,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-01-14,0.72,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-01-14,3.2800000000000002,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-01-14,686.91,CBI OFFROAD FAB,Maryna Beehive,Income,CBI Offroad,Income
+2022-01-15,26.29,WINCO FOODS #42       IDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-01-17,0.8700000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-01-17,18.130000000000003,DOLLARSHAVECLUB       MARINA DEL RECA US,Adam Beehive,Subscriptions,Dollar Shave Club,Expense
+2022-01-17,0.71,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-01-18,0.46,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-01-18,31.54,DR. SQUATCH           VENICE       CA US,Adam Beehive,Groceries,Dr Squatch,Expense
+2022-01-18,0.6799999999999999,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-01-18,11.32,BROULIM'S #1          RIGBY        ID US,Maryna Beehive,Groceries,Broulim's,Expense
+2022-01-18,30,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-01-19,13,LIBERTY MUTUAL,Adam Beehive,Insurance,Liberty Mutual,Expense
+2022-01-21,343.31,BRIGHAM YOUNG UN,Adam Beehive,Income,BYU-I,Income
+2022-01-25,102,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-01-26,0.6699999999999999,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-01-26,44.33,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-01-27,0.53,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-01-27,25.47,Puretalk Holdings     8778207873   GA US,Adam Beehive,Utilities,PureTalk USA,Expense
+2022-01-28,0.8600000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-01-28,31.14,PP*BarberPop Shop     REXBURG      ID US,Adam Beehive,Haircut,BarberPop Shop,Expense
+2022-01-28,0.08,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-01-28,37.92,WINCO FOODS #42       IDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-01-28,716.01,CBI OFFROAD FAB,Maryna Beehive,Income,CBI Offroad,Income
+2022-02-01,106,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-02-03,0.11,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-02-03,12.9,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-02-03,4.99,APPLE.COM/BILL        866-712-7753 CA US,Adam Beehive,Misc.,Apple,Expense
+2022-02-03,0.91,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-02-03,29.09,WINCO FOODS #42       IDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-02-03,839,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-02-04,330.25,BRIGHAM YOUNG UN,Adam Beehive,Income,BYU-I,Income
+2022-02-05,11.84,WENDY'S               AMMON        ID US,Adam Beehive,Dates,Wendy's,Expense
+2022-02-07,0.16,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-02-08,0.97,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-02-08,48.03,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-02-10,0.8600000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-02-10,8.139999999999999,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-02-10,960,BYU IDAHO,Adam Beehive,Misc.,BYU-I,Expense
+2022-02-11,0.8200000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-02-11,5.18,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-02-11,0.18,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-02-11,14.82,TARGET T-1082         IDAHO FALLS  ID US,Maryna Beehive,Groceries,Target,Expense
+2022-02-11,1009.43,CBI OFFROAD FAB,Maryna Beehive,Income,CBI Offroad,Income
+2022-02-12,20.02,WAL-MART #1878        REXBURG      ID US,Maryna Beehive,Groceries,WalMart,Expense
+2022-02-14,0.01,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-02-14,4.99,GOOGLE *PEACOCK       MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Google,Expense
+2022-02-14,1.56,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-02-14,4.42,BROULIM'S #6          REXBURG      ID US,Maryna Beehive,Groceries,Broulim's,Expense
+2022-02-15,0.93,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-02-15,19.08,BYUI CASHNET MOBILE   REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-02-15,0.99,THE DAILY WIRE        8186999948   TN US,Adam Beehive,Fun Money,Daily Wire,Expense
+2022-02-15,150,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-02-16,0.8200000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-02-16,5.18,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-02-17,13,LIBERTY MUTUAL,Adam Beehive,Insurance,Liberty Mutual,Expense
+2022-02-17,0.5700000000000001,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-02-17,6.430000000000001,WM SUPERCENTER #      IDAHO FALLS  ID US,Maryna Beehive,Groceries,WalMart,Expense
+2022-02-18,0.7799999999999999,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-02-18,10.6,DollarShaveClubUS     Marina D Rey CA US,Adam Beehive,Subscriptions,Dollar Shave Club,Expense
+2022-02-18,9.62,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-02-18,361.86,BRIGHAM YOUNG UN,Adam Beehive,Income,BYU-I,Income
+2022-02-18,0.25,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-02-18,6.75,ALBERTSONS #013       IDAHO FALLS  ID US,Maryna Beehive,Groceries,Albertsons,Expense
+2022-02-19,12.639999999999999,WINCO FOO 333 NO WOODRIDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-02-19,12.06,WINCO FOO 333 NO WOODRIDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-02-19,10.58,WAL WAL-MART SUPER 820AMMON        ID US,Maryna Beehive,Groceries,WalMart,Expense
+2022-02-21,0.24000000000000002,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-02-21,48.760000000000005,SAMSCLUB #6345        IDAHO FALLS  ID US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-02-21,1.72,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-02-22,0.48000000000000004,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-02-22,21.52,MOD PIZZA AMMON       AMMON        ID US,Adam Beehive,Dates,MOD Pizza,Expense
+2022-02-25,0.08,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-02-25,5.92,ALBERTSONS #013       IDAHO FALLS  ID US,Maryna Beehive,Groceries,Albertsons,Expense
+2022-02-25,1001.25,CBI OFFROAD FAB,Maryna Beehive,Income,CBI Offroad,Income
+2022-02-28,1.25,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-02-28,25.47,Puretalk Holdings     8778207873   GA US,Adam Beehive,Utilities,PureTalk USA,Expense
+2022-02-28,3.2800000000000002,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-03-01,48,THE DAILY WIRE        8186999948   TN US,Adam Beehive,Fun Money,Daily Wire,Expense
+2022-03-01,40,TETON VILLAGE PARKING TETON VILLAGEWY US,Adam Beehive,Baby Fund,Jackson Hole Ski Resort,Expense
+2022-03-01,1.55,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-03-01,1.37,FRED-MEYE FRED MEYER 1IDAHO FALLS  ID US,Maryna Beehive,Groceries,Fred Meyer,Expense
+2022-03-01,7.08,FRED-MEYE FRED MEYER 1IDAHO FALLS  ID US,Maryna Beehive,Groceries,Fred Meyer,Expense
+2022-03-02,0.61,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-02,95.39,BYUI UNIVERSITY STORE REXBURG      ID US,Adam Beehive,Things We Need,BYU-I,Expense
+2022-03-02,1.33,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-03-02,14.29,WAL WAL-MART SUPER 812AMMON        ID US,Maryna Beehive,Groceries,WalMart,Expense
+2022-03-02,1.3800000000000001,SAMS CLUB #6345       IDAHO FALLS  ID US,Maryna Beehive,Groceries,Sam's Club,Expense
+2022-03-03,1.1800000000000002,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-03,31.79,GAME PULSE            REXBURG      ID US,Adam Beehive,Fun Money,Game Pulse,Expense
+2022-03-03,20.03,LITTLE CAESARS 1273 00208-3590071  ID US,Adam Beehive,Fun Money,Little Caesars,Expense
+2022-03-03,14,NORTHGATE EXPRESS CW  IDAHO FALLS  ID US,Maryna Beehive,Unknown,Unknown,Expense
+2022-03-03,150,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-03-04,1.75,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-04,10.06,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-03-04,36.190000000000005,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-03-04,330.87,BRIGHAM YOUNG UN,Adam Beehive,Income,BYU-I,Income
+2022-03-04,839,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-03-04,115,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-03-05,19.52,WAL WAL-MART SUPER 811IDAHO FALLS  ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-03-07,0.48000000000000004,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-07,1.31,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-03-07,18.55,DESERET BOOK CO #77   REXBURG      ID US,Maryna Beehive,Clothing,Deseret Book,Expense
+2022-03-07,15.139999999999999,WINCO FOODS #42       IDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-03-08,0.91,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-08,83.09,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-03-09,1.11,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-09,17.07,SQ *BLISTERS BBQ      Rexburg      ID US,Adam Beehive,Dates,Blisters BBQ,Expense
+2022-03-09,4.819999999999999,BROULIM'S #6          REXBURG      ID US,Adam Beehive,Groceries,Broulim's,Expense
+2022-03-11,0.9,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-11,31.14,PP*BarberPop Shop     REXBURG      ID US,Adam Beehive,Haircut,BarberPop Shop,Expense
+2022-03-11,2.96,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-03-11,971.72,CBI OFFROAD FAB,Maryna Beehive,Income,CBI Offroad,Income
+2022-03-14,0.01,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-14,4.99,GOOGLE *PEACOCK       MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Google,Expense
+2022-03-14,1,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-03-14,28.91,WINCO FOODS #42       IDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-03-15,0.28,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-03-15,6.72,FRED-MEYE FRED MEYER 1IDAHO FALLS  ID US,Maryna Beehive,Groceries,Fred Meyer,Expense
+2022-03-15,145,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-03-17,13,LIBERTY MUTUAL,Adam Beehive,Insurance,Liberty Mutual,Expense
+2022-03-18,0.04,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-18,2.96,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-03-18,120,VENMO,Adam Beehive,Misc.,Venmo,Expense
+2022-03-18,360.39,BRIGHAM YOUNG UN,Adam Beehive,Income,BYU-I,Income
+2022-03-18,1.1800000000000002,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-03-18,29.330000000000002,WINCO FOODS #42       IDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-03-18,2.4899999999999998,FRED-MEYE FRED MEYER 1IDAHO FALLS  ID US,Maryna Beehive,Groceries,Fred Meyer,Expense
+2022-03-19,11.209999999999999,WENDY'S #12308        REXBURG      ID US,Adam Beehive,Dates,Wendy's,Expense
+2022-03-19,12.8,ALBERTSONS #017       REXBURG      ID US,Adam Beehive,Groceries,Albertsons,Expense
+2022-03-21,1.31,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-21,44.86,JHMR CAFE             TETON VILLAGEWY US,Adam Beehive,Dates,Jackson Hole Ski Resort,Expense
+2022-03-21,7.819999999999999,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-03-22,0.6799999999999999,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-22,13.32,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-03-23,1.31,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-23,78.64999999999999,JEREMYSRAZORS         NASHVILLE    TN US,Adam Beehive,Fun Money,Jeremys Razors,Expense
+2022-03-23,36.04,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-03-23,0.38,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-03-23,9.62,WENDYS #0002          IDAHO FALLS  ID US,Maryna Beehive,Dates,Wendy's,Expense
+2022-03-24,0.5,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-24,2.5,CMSVEND*BYU -IDAHO    REXBURG      ID US,Adam Beehive,Refunds,BYU-I,Expense
+2022-03-25,0.71,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-25,39.99,LINKEDIN-676*2851476  LNKD.IN/BILL CA US,Adam Beehive,One-Time Charge,LinkedIn,Expense
+2022-03-25,4.54,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-03-25,4.76,DAIRY QUEEN #14952    REXBURG      ID US,Adam Beehive,Dates,Dairy Queen,Expense
+2022-03-25,0.96,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-03-25,16.939999999999998,WINCO FOODS #42       IDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-03-25,2.1,SAMS CLUB #6345       IDAHO FALLS  ID US,Maryna Beehive,Groceries,Sam's Club,Expense
+2022-03-25,1016.8299999999999,CBI OFFROAD FAB,Maryna Beehive,Income,CBI Offroad,Income
+2022-03-26,9.31,WENDY'S #12308        REXBURG      ID US,Adam Beehive,Dates,Wendy's,Expense
+2022-03-26,13.12,BROULIM'S #6          REXBURG      ID US,Adam Beehive,Groceries,Broulim's,Expense
+2022-03-28,2.1,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-28,25.47,Puretalk Holdings     8778207873   GA US,Adam Beehive,Utilities,PureTalk USA,Expense
+2022-03-28,20,BIRD* NEG BALANCE     SANTA MONICA CA US,Adam Beehive,One-Time Charge,Bird Scooters,Expense
+2022-03-28,52,ST OF ID STARS,Maryna Beehive,Income,ID State Tresury,Income
+2022-03-29,0.8,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-29,2.2,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-03-29,1.5,CASHIER CHECK,Adam Beehive,One-Time Charge,Misc.,Expense
+2022-03-29,293,Draft# 767699 / UNITED STATES TREASURY,Adam Beehive,One-Time Charge,US Treasury,Expense
+2022-03-29,159,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-03-30,0.37,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-03-30,13.629999999999999,WINCO FOO 333 NO WOODRIDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-03-31,0.03,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-03-31,15.97,WENDY'S #12308        REXBURG      ID US,Adam Beehive,Dates,Wendy's,Expense
+2022-04-01,362.95,BRIGHAM YOUNG UN,Adam Beehive,Income,BYU-I,Income
+2022-04-01,0.27,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-04-01,16.73,WAL-MART #1878        REXBURG      ID US,Maryna Beehive,Groceries,WalMart,Expense
+2022-04-02,9.1,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-04-04,2.69,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-04,17.14,BROULIM'S #6          REXBURG      ID US,Adam Beehive,Groceries,Broulim's,Expense
+2022-04-04,6.7700000000000005,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-04-04,36.3,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-04-05,0.89,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-05,21.14,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-04-05,28.97,EVERYPLATE            9294124771   NY US,Adam Beehive,Groceries,EveryPlate,Expense
+2022-04-05,0.56,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-04-05,464,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-04-06,0.38,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-06,33.620000000000005,BIG JUDS COUNTRY DINERBOISE        ID US,Adam Beehive,Dates,Big Juds,Expense
+2022-04-06,0.52,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-04-06,8.48,WINCO FOO 333 NO WOODRIDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-04-07,13,GAME PULSE            REXBURG      ID US,Adam Beehive,Fun Money,Game Pulse,Expense
+2022-04-07,150,ST OF ID STARS,Maryna Beehive,Income,ID State Tresury,Income
+2022-04-08,1.1400000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-08,169.59,WALGREENS 164 E MAIN SREXBURG      ID US,Adam Beehive,Groceries,WalGreens,Expense
+2022-04-08,15.97,SONIC DRIVE IN #6594  REXBURG      ID US,Adam Beehive,Dates,Sonic,Expense
+2022-04-08,11.3,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-04-08,0.4,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-04-08,10.6,BROULIM'S #6          REXBURG      ID US,Maryna Beehive,Groceries,Broulim's,Expense
+2022-04-08,100,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-04-08,1010.07,CBI OFFROAD FAB,Maryna Beehive,Income,CBI Offroad,Income
+2022-04-09,16.91,WAL WAL-MART SUPER 152IDAHO FALLS  ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-04-09,2.01,MCDONALD'S F36056     REXBURG      ID US,Adam Beehive,Dates,McDonald's,Expense
+2022-04-09,17.22,GOOD 2 GO 110         RIGBY        ID US,Maryna Beehive,Gas,Good 2 Go,Expense
+2022-04-09,5.3,DOLLAR TREE           REXBURG      ID US,Maryna Beehive,Groceries,Dollar Tree,Expense
+2022-04-11,2.4299999999999997,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-11,52.620000000000005,ADAM'S MONGOLIAN GRILLREXBURG      ID US,Adam Beehive,Dates,Adams Mongolian Grill,Expense
+2022-04-11,8.03,BROULIM'S #6          REXBURG      ID US,Adam Beehive,Groceries,Broulim's,Expense
+2022-04-11,2.36,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-04-11,6.119999999999999,BROULIM'S #6          REXBURG      ID US,Maryna Beehive,Groceries,Broulim's,Expense
+2022-04-12,1.56,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-12,5.25,PARAMOUNT 5           REXBURG      ID US,Adam Beehive,Dates,Paramount 5,Expense
+2022-04-12,16.19,WENDYS #0002          IDAHO FALLS  ID US,Adam Beehive,Dates,Wendy's,Expense
+2022-04-13,0.91,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-04-13,1.37,MAVERIK #396          IDAHO FALLS  ID US,Maryna Beehive,Travel,Maverik,Expense
+2022-04-13,29.72,WINCO FOODS #42       IDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-04-15,0.02,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-15,81.98,WAL-MART  WAL-MART SUPREXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-04-15,346.12,BRIGHAM YOUNG UN,Adam Beehive,Income,BYU-I,Income
+2022-04-15,41,PAYPAL,Maryna Beehive,Side Hustle,PayPal,Expense
+2022-04-16,14.31,REXBURG DI            REXBURG      ID US,Adam Beehive,Clothing,DI,Expense
+2022-04-16,26.04,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-04-18,3.9099999999999997,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-18,16.09,WALGREENS 164 E MAIN SREXBURG      ID US,Adam Beehive,Groceries,WalGreens,Expense
+2022-04-18,10.6,DollarShaveClubUS     Marina D Rey CA US,Adam Beehive,Subscriptions,Dollar Shave Club,Expense
+2022-04-18,52.290000000000006,EVERYPLATE            973-210-4915 NY US,Adam Beehive,Groceries,EveryPlate,Expense
+2022-04-18,40.760000000000005,WAL WAL-MART SUPER 710REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-04-18,100,ATM Withdrawal,Maryna Beehive,Fun Money,Beehive Fed Credit Union,Expense
+2022-04-19,0.8400000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-19,34.160000000000004,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-04-19,13,LIBERTY MUTUAL,Adam Beehive,Insurance,Liberty Mutual,Expense
+2022-04-19,151,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-04-21,0.58,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-21,6.42,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-04-21,160,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-04-22,922.1,CBI OFFROAD FAB,Maryna Beehive,Income,CBI Offroad,Income
+2022-04-23,2.5,PARAMOUNT 5           REXBURG      ID US,Adam Beehive,Dates,Paramount 5,Expense
+2022-04-23,22,PARAMOUNT 5           REXBURG      ID US,Adam Beehive,Dates,Paramount 5,Expense
+2022-04-25,0.97,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-25,33.53,PP*BarberPop Shop     REXBURG      ID US,Adam Beehive,Haircut,BarberPop Shop,Expense
+2022-04-25,159,NOOM INC SUB.NOOM.COM NEW YORK     NY US,Adam Beehive,Health & Fitness,Noom,Expense
+2022-04-27,1.6400000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-27,25.45,Puretalk Holdings     8778207873   GA US,Adam Beehive,Utilities,PureTalk USA,Expense
+2022-04-27,9.19,SHELL SERVICE S       EDEN         ID US,Adam Beehive,Car Maintenance,Travelers Oasis,Expense
+2022-04-27,54.720000000000006,WM SUPERC WAL-MART SUPNAMPA        ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-04-28,0.62,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-28,7.38,TRAVELERS OASIS       EDEN         ID US,Adam Beehive,Fun Money,Travelers Oasis,Expense
+2022-04-28,239.05,BYU IDAHO,Adam Beehive,Misc.,BYU-I,Expense
+2022-04-29,0.06,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-04-29,475.94,GOOGLE *GOOGLE STORE  MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Google,Expense
+2022-04-29,286.21,BRIGHAM YOUNG UN,Adam Beehive,Income,BYU-I,Income
+2022-05-02,0.58,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-05-02,62.89,EVERYPLATE            973-210-4915 NY US,Adam Beehive,Groceries,EveryPlate,Expense
+2022-05-02,52.53,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-05-02,0.97,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-05-02,138,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-05-05,0.5700000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-05-05,2.4299999999999997,GOOD 2 GO 105         REXBURG      ID US,Adam Beehive,Gas,Good 2 Go,Expense
+2022-05-05,73.14,RDC CK#12305,Maryna Beehive,Income,Mrs. Powell's,Income
+2022-05-06,0.59,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-05-06,7.41,BROULIM'S #6          REXBURG      ID US,Adam Beehive,Groceries,Broulim's,Expense
+2022-05-07,12.870000000000001,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-05-09,0.35,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-05-09,2.8899999999999997,FizzBizz Rigby        Rigby        ID US,Adam Beehive,Fun Money,Fixxology,Expense
+2022-05-09,62.89,EVERYPLATE            973-210-4915 NY US,Adam Beehive,Groceries,EveryPlate,Expense
+2022-05-10,13.44,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-05-11,50,VENMO,Adam Beehive,Misc.,Venmo,Expense
+2022-05-11,100,Deposit,Maryna Beehive,Income,Plasma Transfer,Income
+2022-05-13,186.42000000000002,BRIGHAM YOUNG UN,Adam Beehive,Income,BYU-I,Income
+2022-05-13,0.6699999999999999,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-05-16,0.26,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-05-16,9.739999999999998,ARBY'S 6246           REXBURG      ID US,Adam Beehive,Dates,Arbys,Expense
+2022-05-16,60,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-05-17,0.36,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-05-17,7.99,MOJANG                STOCKHOLM    SW SE,Adam Beehive,Misc.,Mojang,Expense
+2022-05-17,18.650000000000002,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-05-18,13,LIBERTY MUTUAL,Adam Beehive,Insurance,Liberty Mutual,Expense
+2022-05-21,9.729999999999999,MAVERIK #630          MALAD CITY   ID US,Adam Beehive,Travel,Maverik,Expense
+2022-05-21,55.42,SAMSCLUB #6683        MURRAY       UT US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-05-23,0.96,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-05-23,62.89,EVERYPLATE            973-210-4915 NY US,Adam Beehive,Groceries,EveryPlate,Expense
+2022-05-25,0.23,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-05-25,34.77,AMAZON.COM*1R32B5VZ0  SEATTLE      WA US,Adam Beehive,Fun Money,Amazon,Expense
+2022-05-25,977,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-05-27,1.21,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-05-27,25.45,Puretalk Holdings     8778207873   GA US,Adam Beehive,Utilities,PureTalk USA,Expense
+2022-05-27,4.34,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-05-27,140.63,BRIGHAM YOUNG UN,Adam Beehive,Income,BYU-I,Income
+2022-05-27,150,ATM Deposit,Maryna Beehive,Income,Plasma Transfer,Income
+2022-05-28,13.11,WENDY'S #12308        REXBURG      ID US,Adam Beehive,Dates,Wendy's,Expense
+2022-05-30,2.59,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-05-30,35.13,BROULIM'S #6          REXBURG      ID US,Adam Beehive,Groceries,Broulim's,Expense
+2022-05-30,6.99,GOOGLE *BRAINFM       MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Brain FM,Expense
+2022-05-30,21.18,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-05-31,78,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-06-06,33.74,PP*BarberPop Shop     REXBURG      ID US,Adam Beehive,Haircut,BarberPop Shop,Expense
+2022-06-06,92.99000000000001,NEWEGG MARKETPLACE    8003901119   CA US,Adam Beehive,Fun Money,New Egg,Expense
+2022-06-07,0.27,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-06-10,45,BRIGHAM YOUNG UN,Adam Beehive,Income,BYU-I,Income
+2022-06-10,50.63,BRIGHAM YOUNG UN,Adam Beehive,Income,BYU-I,Income
+2022-06-10,0.8200000000000001,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-06-14,0.91,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-06-14,23.09,FREDDY'S 76-0001      REXBURG      ID US,Adam Beehive,Dates,Freddy's,Expense
+2022-06-14,1700,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-06-15,0.23,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-06-15,1651.77,UNITED                800-932-2732 TX US,Maryna Beehive,Mom's Trip,United,Expense
+2022-06-16,5.91,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-06-16,7.99,MOJANG                STOCKHOLM    SW SE,Adam Beehive,Misc.,Mojang,Expense
+2022-06-17,13,LIBERTY MUTUAL,Adam Beehive,Insurance,Liberty Mutual,Expense
+2022-06-17,0.1,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-06-20,0.9400000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-06-20,75.06,SAMS CLUB SAM'S CLUB  IDAHO FALLS  ID US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-06-22,30,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-06-23,0.76,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-06-23,5.609999999999999,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-06-23,23.630000000000003,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-06-24,0.15000000000000002,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-06-24,21.85,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-06-27,0.8200000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-06-27,7.18,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-06-27,0.71,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-06-27,541.2900000000001,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-06-28,1.36,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-06-28,7.1899999999999995,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-06-28,25.45,Puretalk Holdings     8778207873   GA US,Adam Beehive,Utilities,PureTalk USA,Expense
+2022-06-30,0.01,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-06-30,6.99,GOOGLE *BRAINFM       MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Brain FM,Expense
+2022-07-01,3.8099999999999996,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-07-01,3.4899999999999998,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-07-01,23.5,BROULIM'S #6,Adam Beehive,Groceries,Broulim's,Expense
+2022-07-01,200,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-07-02,1.2,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-07-05,0.1,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-07-05,250,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-07-05,1190.9,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-07-06,0.21000000000000002,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-07-06,1.79,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-07-06,150,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-07-08,0.09,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-07-08,5.91,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-07-11,0.81,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-07-11,49.99,2COCOM*MALWAREBYTES   Alpharetta   GA US,Adam Beehive,Subscriptions,Malwarebytes,Expense
+2022-07-11,2.2,CMSVEND*BYU -IDAHO    REXBURG      ID US,Adam Beehive,Refunds,BYU-I,Expense
+2022-07-11,100,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-07-12,0.51,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-07-12,3.4899999999999998,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-07-13,0.89,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-07-13,11.209999999999999,BYUI FOOD SVCS        REXBURG      ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-07-13,15.9,MRS POWELLS REXBURG   REXBURG      ID US,Adam Beehive,Income,Mrs. Powell's,Income
+2022-07-15,1.4,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-07-15,1.3,CMSVEND*BYU -IDAHO    REXBURG      ID US,Adam Beehive,Refunds,BYU-I,Expense
+2022-07-15,1.3,CMSVEND*BYU -IDAHO    REXBURG      ID US,Adam Beehive,Refunds,BYU-I,Expense
+2022-07-18,0.77,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-07-18,33.74,PP*BarberPop Shop     REXBURG      ID US,Adam Beehive,Haircut,BarberPop Shop,Expense
+2022-07-18,7.99,MOJANG                STOCKHOLM    SW SE,Adam Beehive,Misc.,Mojang,Expense
+2022-07-18,117.5,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-07-19,13,LIBERTY MUTUAL,Adam Beehive,Insurance,Liberty Mutual,Expense
+2022-07-21,62,VENMO,Adam Beehive,Misc.,Venmo,Expense
+2022-07-22,0.53,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-07-22,64.47,MAVERIK #195          REXBURG      ID US,Adam Beehive,Travel,Maverik,Expense
+2022-07-25,2.9,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-07-25,49.05,SAMS CLUB SAM'S CLUB  IDAHO FALLS  ID US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-07-25,19.19,OLD FAITHFUL CAFETERIAYELLOWSTONE NWY US,Adam Beehive,Dates,Old Faithful Cafe,Expense
+2022-07-25,1.58,BYUI CASHNET WEB      2084961900   ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-07-25,20.279999999999998,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-07-26,393,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-07-27,0.45,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-07-27,25.55,Puretalk Holdings     8778207873   GA US,Adam Beehive,Utilities,PureTalk USA,Expense
+2022-07-27,10,BYU IDAHO,Adam Beehive,Misc.,BYU-I,Expense
+2022-07-29,350,ATM Deposit,Maryna Beehive,Income,Plasma Transfer,Income
+2022-07-30,6.99,GOOGLE *BRAINFM       MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Brain FM,Expense
+2022-07-31,0.01,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-08-02,24.08,SP JEREMYSRAZORS      NASHVILLE    TN US,Adam Beehive,Fun Money,Jeremys Razors,Expense
+2022-08-02,21,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-08-02,89.93,SP HENSON SHAVING     KITCHENER    ON CA,Adam Beehive,One-Time Charge,Henson Shaving,Expense
+2022-08-02,70,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-08-03,0.6599999999999999,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-08-03,10.34,THE DAILY WIRE        8186999948   TN US,Adam Beehive,Fun Money,Daily Wire,Expense
+2022-08-03,0.99,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-08-04,610,ATM Deposit,Maryna Beehive,Income,Plasma Transfer,Income
+2022-08-09,5,STEAM PURCHASE        425-9522985  WA US,Adam Beehive,Fun Money,Steam,Expense
+2022-08-09,30,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-08-12,27.55,DAN S ACE   REXBURG   REXBURG      ID US,Adam Beehive,Home Improvement,Ace,Expense
+2022-08-12,2.1,WENDY'S #12308        REXBURG      ID US,Adam Beehive,Dates,Wendy's,Expense
+2022-08-12,16.2,WENDY'S #12308        REXBURG      ID US,Adam Beehive,Dates,Wendy's,Expense
+2022-08-13,2.15,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-08-15,0.3,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-08-15,7.99,MOJANG                STOCKHOLM    SW SE,Adam Beehive,Misc.,Mojang,Expense
+2022-08-15,13.709999999999999,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-08-17,13,LIBERTY MUTUAL,Adam Beehive,Insurance,Liberty Mutual,Expense
+2022-08-20,90,ATM Deposit,Maryna Beehive,Income,Plasma Transfer,Income
+2022-08-23,2.12,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-08-23,3.38,BROULIM'S #6          REXBURG      ID US,Adam Beehive,Groceries,Broulim's,Expense
+2022-08-23,23,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-08-24,0.56,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-08-24,23.99,WINCO FOODS #42       IDAHO FALLS  ID US,Adam Beehive,Groceries,WinCo,Expense
+2022-08-24,33.449999999999996,SAMSCLUB #6345        IDAHO FALLS  ID US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-08-24,0.62,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-08-25,1.43,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-08-25,8.47,JIMMY JOHNS # 1060    IDAHO FALLS  ID US,Adam Beehive,Fun Money,Jimmy Johns,Expense
+2022-08-25,0.1,STEAM PURCHASE        425-9522985  WA US,Adam Beehive,Fun Money,Steam,Expense
+2022-08-25,25,STEAM PURCHASE        425-9522985  WA US,Adam Beehive,Fun Money,Steam,Expense
+2022-08-29,25.54,Puretalk Holdings     8778207873   GA US,Adam Beehive,Utilities,PureTalk USA,Expense
+2022-08-29,16.959999999999997,Deseret Book - 51770  Rexburg      ID US,Adam Beehive,Clothing,Deseret Book,Expense
+2022-08-29,36.33,PP*BarberPop Shop     REXBURG      ID US,Adam Beehive,Haircut,BarberPop Shop,Expense
+2022-08-29,8.729999999999999,GOOD 2 GO 105         REXBURG      ID US,Adam Beehive,Gas,Good 2 Go,Expense
+2022-08-30,0.01,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-08-30,6.99,GOOGLE *BRAINFM       MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Brain FM,Expense
+2022-08-30,1.44,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-08-30,121.93,WAL-MART ASSOCS.,Maryna Beehive,Groceries,WalMart,Expense
+2022-08-30,879,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-08-30,1.03,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-09-01,1.8,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-01,4.119999999999999,BROULIM'S #6          REXBURG      ID US,Adam Beehive,Groceries,Broulim's,Expense
+2022-09-01,6.08,COLDSTONE #281        AMMON        ID US,Adam Beehive,Dates,Cold Stone,Expense
+2022-09-01,42.08,MRS POWELLS LLC,Adam Beehive,Income,Mrs. Powell's,Income
+2022-09-01,0.07,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-09-01,121.93,WAL-MART ASSOCS.,Maryna Beehive,Groceries,WalMart,Expense
+2022-09-02,0.98,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-02,20.02,WM SUPERCENTER #      IDAHO FALLS  ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-09-02,42.290000000000006,RDC CK#12418,Maryna Beehive,Income,Mrs. Powell's,Income
+2022-09-02,47,ATM Deposit,Maryna Beehive,Income,Plasma Transfer,Income
+2022-09-03,9.99,GOOGLE *FITBIT LLC    MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Google,Expense
+2022-09-05,0.6799999999999999,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-05,15.33,THE DAILY WIRE        8186999948   TN US,Adam Beehive,Fun Money,Daily Wire,Expense
+2022-09-05,274.3,CNCL RD#9079213,Adam Beehive,Unknown,Unknown,Expense
+2022-09-05,274.3,RDC CK#9079213,Adam Beehive,Income,WalMart,Income
+2022-09-07,0.5700000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-07,67.43,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-09-07,0.38,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-09-09,274.3,Deposit,Adam Beehive,Income,Plasma Transfer,Income
+2022-09-10,56.39,SAMS CLUB SAM'S CLUB  IDAHO FALLS  ID US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-09-10,9.05,GOOD 2 GO 105         REXBURG      ID US,Adam Beehive,Gas,Good 2 Go,Expense
+2022-09-12,23.52,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-09-13,0.03,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-13,4.970000000000001,MCDONALD'S F3605,Adam Beehive,Dates,McDonald's,Expense
+2022-09-13,1.56,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-13,90,ATM Withdrawal,Maryna Beehive,Fun Money,Beehive Fed Credit Union,Expense
+2022-09-13,6,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-09-13,0.48000000000000004,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-09-14,7.99,MOJANG                STOCKHOLM    SW SE,Adam Beehive,Misc.,Mojang,Expense
+2022-09-14,2268,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-09-14,1,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-09-15,209.87,MRS POWELLS LLC,Adam Beehive,Income,Mrs. Powell's,Income
+2022-09-15,0.01,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-19,13,LIBERTY MUTUAL,Adam Beehive,Insurance,Liberty Mutual,Expense
+2022-09-20,425.38,NUCLEANE LLC,Maryna Beehive,Income,Nucleane,Income
+2022-09-21,0.01,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-21,20.99,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-09-21,63,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-09-22,55.11,SAMS CLUB SAM'S CLUB  IDAHO FALLS  ID US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-09-23,0.89,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-24,29.87,WALGREENS 164 E MAIN SREXBURG      ID US,Adam Beehive,Groceries,WalGreens,Expense
+2022-09-27,0.49,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-27,4.970000000000001,MCDONALD'S F36056     REXBURG      ID US,Adam Beehive,Dates,McDonald's,Expense
+2022-09-27,25.54,Puretalk Holdings     8778207873   GA US,Adam Beehive,Utilities,PureTalk USA,Expense
+2022-09-27,0.13,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-28,0.07,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-28,62.93,GOOD 2 GO 117         IDAHO FALLS  ID US,Adam Beehive,Gas,Good 2 Go,Expense
+2022-09-28,7,BYUI CASHNET WEB      2084961900   ID US,Adam Beehive,Misc.,BYU-I,Expense
+2022-09-29,7.3,WENDY'S #12308        REXBURG      ID US,Adam Beehive,Dates,Wendy's,Expense
+2022-09-30,0.01,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-30,6.99,GOOGLE *BRAINFM       MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Brain FM,Expense
+2022-09-30,0.7,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-09-30,118.52,RDC CK#12447,Maryna Beehive,Income,Mrs. Powell's,Income
+2022-09-30,17.01,RDC CK#12434,Maryna Beehive,Income,Mrs. Powell's,Income
+2022-10-01,2.8099999999999996,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-10-03,15.33,THE DAILY WIRE        8186999948   TN US,Adam Beehive,Fun Money,Daily Wire,Expense
+2022-10-03,24.08,SP JEREMYSRAZORS      NASHVILLE    TN US,Adam Beehive,Fun Money,Jeremys Razors,Expense
+2022-10-03,59.6,WAL-MART  WAL-MART SUPREXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-10-03,9.99,GOOGLE *FITBIT LLC    MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Google,Expense
+2022-10-03,4,BYUI TICKET OFFICE    2084963170   ID US,Maryna Beehive,Misc.,BYU-I,Expense
+2022-10-03,879,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-10-04,0.7799999999999999,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-04,7.22,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-10-04,28.59,GOOD 2 GO | POS CORRECTION,Adam Beehive,Gas,Good 2 Go,Expense
+2022-10-04,2.19,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-04,3,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-10-05,4.25,USPS PO 1575500440    REXBURG      ID US,Adam Beehive,One-Time Charge,USPS,Expense
+2022-10-05,553.14,RESEARCH AND BUS,Adam Beehive,Income,RDBC,Income
+2022-10-05,495.68,NUCLEANE LLC,Maryna Beehive,Income,Nucleane,Income
+2022-10-06,31.14,PP*BarberPop Shop     REXBURG      ID US,Adam Beehive,Haircut,BarberPop Shop,Expense
+2022-10-06,0.75,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-06,600,ST OF ID STARS,Maryna Beehive,Income,ID State Tresury,Income
+2022-10-07,0.8600000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-08,42.5,MAVERIK #195          REXBURG      ID US,Adam Beehive,Travel,Maverik,Expense
+2022-10-10,0.5,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-11,9.31,MAVERIK #630          MALAD CITY   ID US,Adam Beehive,Travel,Maverik,Expense
+2022-10-12,0.7799999999999999,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-12,60.83,CHEVRON 0204564       LEHI         UT US,Adam Beehive,Gas,Chevron,Expense
+2022-10-12,8.47,CAFE ZUPAS - DOWNTOWN SLC          UT US,Adam Beehive,Dates,Cafe Zupas,Expense
+2022-10-12,0.92,OFFICEMAX/DEPOT 6281  SALT LAKE CITUT US,Adam Beehive,Things We Need,Office Max,Expense
+2022-10-12,0.69,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-13,12.709999999999999,CAFE RIO 0011 4TH SOUTSALT LAKE CITUT US,Adam Beehive,Dates,Cafe Rio,Expense
+2022-10-13,3.24,TACO BELL 025392      AMERICAN FORKUT US,Adam Beehive,Fun Money,Taco Bell,Expense
+2022-10-13,13.29,WINCO FOO 333 NO WOODRIDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-10-13,137.43,BRIGHAM YOUNG UN,Maryna Beehive,Income,BYU-I,Income
+2022-10-13,95,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-10-14,1.23,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-14,19.47,WENDY'S #12308        REXBURG      ID US,Adam Beehive,Dates,Wendy's,Expense
+2022-10-14,7.99,MOJANG                STOCKHOLM    SW SE,Adam Beehive,Misc.,Mojang,Expense
+2022-10-14,75.31,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-10-14,1.05,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-14,0.71,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-10-18,13.850000000000001,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-10-19,9.84,MAVERIK #630          MALAD CITY   ID US,Adam Beehive,Travel,Maverik,Expense
+2022-10-19,31.02,SAMS CLUB SAM'S CLUB  IDAHO FALLS  ID US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-10-19,13,LIBERTY MUTUAL,Adam Beehive,Insurance,Liberty Mutual,Expense
+2022-10-19,0.15000000000000002,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-20,321.71999999999997,RESEARCH AND BUS,Adam Beehive,Income,RDBC,Income
+2022-10-20,1.1400000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-21,8.47,Subway 1132           Salt Lake CitUT US,Adam Beehive,Dates,Subway,Expense
+2022-10-21,908.48,CONSULTNET LLC,Adam Beehive,Income,ConsultNet,Income
+2022-10-21,6.42,MAVERIK #511          PROVO        UT US,Adam Beehive,Travel,Maverik,Expense
+2022-10-21,57.02,MAVERIK #511          PROVO        UT US,Adam Beehive,Travel,Maverik,Expense
+2022-10-22,14.81,MAVERIK #630          MALAD CITY   ID US,Adam Beehive,Travel,Maverik,Expense
+2022-10-22,2.09,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-24,13.77,BROULIM'S #6          REXBURG      ID US,Adam Beehive,Groceries,Broulim's,Expense
+2022-10-24,123.02,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-10-25,159,NOOM INC SUB.NOOM.COM NEW YORK     NY US,Adam Beehive,Health & Fitness,Noom,Expense
+2022-10-25,1.4,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-26,2.3299999999999996,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-26,30,SQ *WILD ADVENTURE CORIdaho Falls  ID US,Adam Beehive,Dates,BYU-I,Expense
+2022-10-26,18.32,CULVERS OF IDAHO FALLSIDAHO FALLS  ID US,Adam Beehive,Dates,Culvers,Expense
+2022-10-26,6.659999999999999,FLYING J #641         MCCAMMON     ID US,Adam Beehive,Travel,Flying J,Expense
+2022-10-26,50.230000000000004,SAMS CLUB SAM'S CLUB  IDAHO FALLS  ID US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-10-26,10.46,WENDY'S #12308        REXBURG      ID US,Adam Beehive,Dates,Wendy's,Expense
+2022-10-26,318.89,RDC CK#12453,Maryna Beehive,Income,Mrs. Powell's,Income
+2022-10-27,25.5,Puretalk Holdings     8778207873   GA US,Adam Beehive,Utilities,PureTalk USA,Expense
+2022-10-27,6.42,MAVERIK #280          LEHI         UT US,Adam Beehive,Travel,Maverik,Expense
+2022-10-27,184,BRIGHAM YOUNG UN,Maryna Beehive,Income,BYU-I,Income
+2022-10-28,14.17,MAVERIK #630          MALAD CITY   ID US,Adam Beehive,Travel,Maverik,Expense
+2022-10-28,874.3299999999999,CONSULTNET LLC,Adam Beehive,Income,ConsultNet,Income
+2022-10-28,9.81,MAVERIK #516          AMERICAN FORKUT US,Adam Beehive,Travel,Maverik,Expense
+2022-10-28,61.15,MAVERIK #516          AMERICAN FORKUT US,Adam Beehive,Travel,Maverik,Expense
+2022-10-28,1.08,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-29,1.87,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-30,6.99,GOOGLE *BRAINFM       MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Brain FM,Expense
+2022-10-31,0.01,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-10-31,0.8200000000000001,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-10-31,920.1800000000001,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-11-01,87.43,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-11-01,96,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-11-02,6.44,MAVERIK #630          MALAD CITY   ID US,Adam Beehive,Travel,Maverik,Expense
+2022-11-02,67,WWW.ADEPT-PT.COM      LEHI         UT US,Adam Beehive,Health & Fitness,Adept PT,Expense
+2022-11-02,0.5700000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-02,425.32,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-11-03,2.3099999999999996,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-03,15.33,THE DAILY WIRE        8186999948   TN US,Adam Beehive,Fun Money,Daily Wire,Expense
+2022-11-03,9.99,GOOGLE *FITBIT LLC    MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Google,Expense
+2022-11-03,8.239999999999998,MAVERIK #516          AMERICAN FORKUT US,Adam Beehive,Travel,Maverik,Expense
+2022-11-03,47.13,MAVERIK #516          AMERICAN FORKUT US,Adam Beehive,Travel,Maverik,Expense
+2022-11-03,0.56,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-03,0.6799999999999999,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-11-04,8.77,MAVERIK #630          MALAD CITY   ID US,Adam Beehive,Travel,Maverik,Expense
+2022-11-04,5.930000000000001,WAL SAM'S CLUB     620LAYTON       UT US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-11-04,3.65,MAVERIK #561          DRAPER       UT US,Adam Beehive,Travel,Maverik,Expense
+2022-11-04,13.709999999999999,MAVERIK #516          AMERICAN FORKUT US,Adam Beehive,Travel,Maverik,Expense
+2022-11-04,105.16,RESEARCH AND BUS,Adam Beehive,Income,RDBC,Income
+2022-11-04,830.11,CONSULTNET LLC,Adam Beehive,Income,ConsultNet,Income
+2022-11-05,0.9400000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-08,0.47000000000000003,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-08,93.53,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-11-09,152.95000000000002,BRIGHAM YOUNG UN,Maryna Beehive,Income,BYU-I,Income
+2022-11-10,62.09,PRO LUBE LLC          RIGBY        ID US,Adam Beehive,Car Maintenance,Pro Lube,Expense
+2022-11-10,15.56,STEAM PURCHASE        425-9522985  WA US,Adam Beehive,Fun Money,Steam,Expense
+2022-11-10,521.98,CONSULTNET LLC,Adam Beehive,Income,ConsultNet,Income
+2022-11-11,1.03,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-11,16.02,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-11-11,341.95,ETT*ADAGIORENT        801-8775491  UT US,Adam Beehive,Rent,Adagio Apartments,Expense
+2022-11-11,1.35,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-14,0.01,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-14,7.99,MOJANG                STOCKHOLM    SW SE,Adam Beehive,Misc.,Mojang,Expense
+2022-11-14,68.01,RDC CK#12478,Maryna Beehive,Income,Mrs. Powell's,Income
+2022-11-15,0.08,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-11-15,27.919999999999998,WINCO FOODS #42       IDAHO FALLS  ID US,Maryna Beehive,Groceries,WinCo,Expense
+2022-11-15,33,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-11-17,33.74,PP*BarberPop Shop     REXBURG      ID US,Adam Beehive,Haircut,BarberPop Shop,Expense
+2022-11-17,13,LIBERTY MUTUAL,Adam Beehive,Insurance,Liberty Mutual,Expense
+2022-11-18,81.25,RESEARCH AND BUS,Adam Beehive,Income,RDBC,Income
+2022-11-18,874.3199999999999,CONSULTNET LLC,Adam Beehive,Income,ConsultNet,Income
+2022-11-18,72.2,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-11-18,0.26,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-19,0.8,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-21,18,DOMINO'S 7391         REXBURG      ID US,Adam Beehive,Fun Money,Domino's,Expense
+2022-11-22,95.56,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-11-23,0.77,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-23,4.23,BROULIM'S #6          REXBURG      ID US,Adam Beehive,Groceries,Broulim's,Expense
+2022-11-23,0.44,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-23,184,BRIGHAM YOUNG UN,Maryna Beehive,Income,BYU-I,Income
+2022-11-24,69.99000000000001,BLIZ*BLIZZARD US300   949-955-1380 CA US,Adam Beehive,Fun Money,Blizzard Entertainment,Expense
+2022-11-25,0.26,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-25,18.74,MEGAPLEX WEBSITE      8013044531   UT US,Adam Beehive,Dates,Megaplex,Expense
+2022-11-25,795.04,CONSULTNET LLC,Adam Beehive,Income,ConsultNet,Income
+2022-11-25,0.01,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-28,26.59,Puretalk Holdings     8778207873   GA US,Adam Beehive,Utilities,PureTalk USA,Expense
+2022-11-28,118.7,AUTOZONE  3703        REXBURG      ID US,Adam Beehive,Car Maintenance,Autozone,Expense
+2022-11-28,41.339999999999996,RDC CK#12493,Maryna Beehive,Income,Mrs. Powell's,Income
+2022-11-29,0.5,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-29,79.5,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-11-29,0.71,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-30,0.28,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-11-30,18.73,FREDDY'S 76-0001      REXBURG      ID US,Adam Beehive,Dates,Freddy's,Expense
+2022-11-30,6.99,GOOGLE *BRAINFM       MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Brain FM,Expense
+2022-11-30,35,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-12-01,6.42,MAVERIK #511          PROVO        UT US,Adam Beehive,Travel,Maverik,Expense
+2022-12-01,12.27,MAVERIK #630,Adam Beehive,Travel,Maverik,Expense
+2022-12-01,29.69,SAMS CLUB SAM'S,Adam Beehive,Groceries,Sam's Club,Expense
+2022-12-02,26.32,SAMS CLUB SAM'S CLUB  LAYTON       UT US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-12-02,13.84,TST* FIESTA OLE 17TH  IDAHO FALLS  ID US,Adam Beehive,Dates,Fiesta Ole,Expense
+2022-12-02,16.85,MCDONALD'S F34870     WOODS CROSS  UT US,Adam Beehive,Dates,McDonald's,Expense
+2022-12-02,941.64,CONSULTNET LLC,Adam Beehive,Income,ConsultNet,Income
+2022-12-02,9.950000000000001,MAVERIK #511          PROVO        UT US,Adam Beehive,Travel,Maverik,Expense
+2022-12-02,1.62,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-03,36.92,WAL-MART  WAL-MART SUPREXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-12-03,6.63,DOLLAR TR 125 VALLEY RREXBURG      ID US,Adam Beehive,Groceries,Dollar Tree,Expense
+2022-12-03,56.71,WAL-MART #1878        REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-12-03,1.04,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-05,20.22,CAFE RIO 0148 SO PROVOPROVO        UT US,Adam Beehive,Dates,Cafe Rio,Expense
+2022-12-05,24.08,SP JEREMYSRAZORS      NASHVILLE    TN US,Adam Beehive,Fun Money,Jeremys Razors,Expense
+2022-12-05,15.33,THE DAILY WIRE        8186999948   TN US,Adam Beehive,Fun Money,Daily Wire,Expense
+2022-12-05,125.2,RESEARCH AND BUS,Adam Beehive,Income,RDBC,Income
+2022-12-06,1.6800000000000002,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-06,144.16,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-12-06,67.16,MAVERIK #511          PROVO        UT US,Adam Beehive,Travel,Maverik,Expense
+2022-12-06,3.11,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-07,1.79,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-07,39.15,MAVERIK #630          MALAD CITY   ID US,Adam Beehive,Travel,Maverik,Expense
+2022-12-07,10.06,MAVERIK #511          PROVO        UT US,Adam Beehive,Travel,Maverik,Expense
+2022-12-08,115,BRIGHAM YOUNG UN,Maryna Beehive,Income,BYU-I,Income
+2022-12-09,81.72,GOOD 2 GO 105         REXBURG      ID US,Adam Beehive,Gas,Good 2 Go,Expense
+2022-12-09,20.919999999999998,WAL WAL-MART SUPER 311REXBURG      ID US,Adam Beehive,Groceries,WalMart,Expense
+2022-12-09,941.64,CONSULTNET LLC,Adam Beehive,Income,ConsultNet,Income
+2022-12-09,17,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
+2022-12-10,33.4,SAMS CLUB SAM'S CLUB  IDAHO FALLS  ID US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-12-10,2.8499999999999996,MAVERIK #630          MALAD CITY   ID US,Adam Beehive,Travel,Maverik,Expense
+2022-12-10,8.32,MAVERIK #397          FARMINGTON   UT US,Adam Beehive,Travel,Maverik,Expense
+2022-12-10,2.11,MAVERIK #630          MALAD CITY   ID US,Adam Beehive,Travel,Maverik,Expense
+2022-12-10,63.02,MAVERIK #575          RIGBY        ID US,Adam Beehive,Travel,Maverik,Expense
+2022-12-10,0.36,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-12,164.06,NST BEST BUY #497  002SANDY        UT US,Adam Beehive,Refunds,Best Buy,Expense
+2022-12-13,7.99,MOJANG                STOCKHOLM    SW SE,Adam Beehive,Misc.,Mojang,Expense
+2022-12-13,4.24,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-14,1,COMCAST,Adam Beehive,Utilities,ComCast,Expense
+2022-12-14,0.01,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-15,66.25,MAVERIK #304          DRAPER       UT US,Adam Beehive,Travel,Maverik,Expense
+2022-12-15,106.67999999999999,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-12-16,0.6699999999999999,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-16,103.33,CHEESECAKE SALT LAKE CMURRAY       UT US,Adam Beehive,Dates,Cheesecake Factory,Expense
+2022-12-16,10,BYU IDAHO,Adam Beehive,Misc.,BYU-I,Expense
+2022-12-16,707.37,CONSULTNET LLC,Adam Beehive,Income,ConsultNet,Income
+2022-12-16,1.07,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-16,400,BYU IDAHO,Maryna Beehive,Misc.,BYU-I,Expense
+2022-12-17,21.62,HARMONS - BANGE       DRAPER       UT US,Adam Beehive,Groceries,Harmon's,Expense
+2022-12-17,7.83,AMAZON.COM*579KR55Q3  SEATTLE      WA US,Adam Beehive,Fun Money,Amazon,Expense
+2022-12-19,2.01,HARMONS - BANGE       DRAPER       UT US,Adam Beehive,Groceries,Harmon's,Expense
+2022-12-19,10.92,LIBERTY MUTUAL,Adam Beehive,Insurance,Liberty Mutual,Expense
+2022-12-20,395.84000000000003,RESEARCH AND BUS,Adam Beehive,Income,RDBC,Income
+2022-12-20,70.74000000000001,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-12-20,1.62,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-20,13.91,BROULIM'S #1          RIGBY        ID US,Maryna Beehive,Groceries,Broulim's,Expense
+2022-12-21,35.49,AMAZON.COM*AL3J131K3  SEATTLE      WA US,Adam Beehive,Fun Money,Amazon,Expense
+2022-12-21,63.28,MAVERIK #561          DRAPER       UT US,Adam Beehive,Travel,Maverik,Expense
+2022-12-21,0.26,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-21,0.09,POCKET CHANGE,Maryna Beehive,Pocket Change,Pocket Change,Expense
+2022-12-22,40.01,MAVERIK #575          RIGBY        ID US,Adam Beehive,Travel,Maverik,Expense
+2022-12-22,6.35,STEAMGAMES.COM 4259522Bellevue     WA US,Adam Beehive,Fun Money,Steam,Expense
+2022-12-22,13.52,CAFE ZUPAS - QUARRYBENSANDY        UT US,Adam Beehive,Dates,Cafe Zupas,Expense
+2022-12-22,4.970000000000001,RIDLEY'S FAMILY       POCATELLO    ID US,Adam Beehive,Groceries,Ridleys,Expense
+2022-12-22,3.08,MAVERIK #644          MARRIOTT-SLATUT US,Adam Beehive,Travel,Maverik,Expense
+2022-12-22,1.23,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-22,69,BRIGHAM YOUNG UN,Maryna Beehive,Income,BYU-I,Income
+2022-12-23,31.79,BED BATH & BEYOND #626AMMON        ID US,Adam Beehive,Things We Need,Bed Bath & Beyond,Expense
+2022-12-23,876.25,CONSULTNET LLC,Adam Beehive,Income,ConsultNet,Income
+2022-12-23,39.58,Ch JesusChrist,Adam Beehive,Tithing,Church of Jesus Christ,Expense
+2022-12-23,3.07,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-23,118.17999999999999,RDC CK#12520,Maryna Beehive,Income,Mrs. Powell's,Income
+2022-12-23,1000,VENMO,Maryna Beehive,Misc.,Venmo,Expense
+2022-12-24,15.65,BROULIM'S #6          REXBURG      ID US,Adam Beehive,Groceries,Broulim's,Expense
+2022-12-24,0.63,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-26,31.79,SQ *HOLIDAE FUN & GAMERigby        ID US,Adam Beehive,Gifts,Holidae Games,Expense
+2022-12-26,26.69,HARMONS - BANGE       DRAPER       UT US,Adam Beehive,Groceries,Harmon's,Expense
+2022-12-26,500,ATM Withdrawal,Adam Beehive,Fun Money,Beehive Fed Credit Union,Expense
+2022-12-26,16.95,WALGREENS 535 E 17TH SIDAHO FALLS  ID US,Adam Beehive,Groceries,WalGreens,Expense
+2022-12-26,55.03,SAMSCLUB #6345        IDAHO FALLS  ID US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-12-26,500,ATM Withdrawal,Maryna Beehive,Fun Money,Beehive Fed Credit Union,Expense
+2022-12-27,15.49,WAL-MART #2307        SOUTH JORDAN UT US,Adam Beehive,Groceries,WalMart,Expense
+2022-12-27,39.82,SAMS CLUB SAM'S CLUB  SOUTH JORDAN UT US,Adam Beehive,Groceries,Sam's Club,Expense
+2022-12-27,25,STEAMGAMES.COM 4259522Bellevue     WA US,Adam Beehive,Fun Money,Steam,Expense
+2022-12-27,26.59,Puretalk Holdings     8778207873   GA US,Adam Beehive,Utilities,PureTalk USA,Expense
+2022-12-27,1.8900000000000001,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-28,6.26,MCDONALD'S F32093     DRAPER       UT US,Adam Beehive,Dates,McDonald's,Expense
+2022-12-28,0.07,Adagio Apartment,Adam Beehive,Utilities,Adagio Apartments,Expense
+2022-12-28,0.4,Adagio Apartment,Adam Beehive,Utilities,Adagio Apartments,Expense
+2022-12-28,0.07,Adagio Apartment,Adam Beehive,Utilities,Adagio Apartments,Expense
+2022-12-28,0.4,Adagio Apartment,Adam Beehive,Utilities,Adagio Apartments,Expense
+2022-12-28,1.1,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-28,200,ATM Withdrawal,Maryna Beehive,Fun Money,Beehive Fed Credit Union,Expense
+2022-12-29,2.27,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-30,1.25,POCKET CHANGE,Adam Beehive,Pocket Change,Pocket Change,Expense
+2022-12-30,24.650000000000002,SQ *TENNEY'S PIZZA    Riverton     UT US,Adam Beehive,Fun Money,Tenneys Pizza,Expense
+2022-12-30,6.99,GOOGLE *BRAINFM       MOUNTAIN VIEWCA US,Adam Beehive,Fun Money,Brain FM,Expense
+2022-12-30,1670.73,Adagio,Adam Beehive,Rent,Adagio Apartments,Expense
+2022-12-30,852.22,CONSULTNET LLC,Adam Beehive,Income,ConsultNet,Income
+2022-12-30,8.38,PILOT #1185           LITTLEFIELD  AZ US,Adam Beehive,Fun Money,Flying J,Expense
+2022-12-30,16,Ch JesusChrist,Maryna Beehive,Tithing,Church of Jesus Christ,Expense
