@@ -3,4 +3,4 @@ This is a personal finance analysis app. My wife had lots of questions about our
 
 The data here, is just one one year of our expenses while we were in college. 
 
-See the (full article)[https://adamromriell.wixsite.com/adamsportfoliowebsit/post/personal-finance-analysis-project] about the decisions I've made for this project. 
+See the [full article](https://adamromriell.wixsite.com/adamsportfoliowebsit/post/personal-finance-analysis-project) about the decisions I've made for this project. 
